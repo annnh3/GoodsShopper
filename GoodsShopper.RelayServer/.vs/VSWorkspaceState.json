@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GoodsShopper.RelayServer",
+    "\\GoodsShopper.RelayServer.Domain",
+    "\\GoodsShopper.RelayServer.Domain\\ClientAction",
+    "\\GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer",
+    "\\GoodsShopper.RelayServer\\Applibs"
+  ],
+  "SelectedNode": "\\GoodsShopper.RelayServer.sln",
+  "PreviewInSolutionExplorer": false
+}

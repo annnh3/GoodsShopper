@@ -1,0 +1,2738 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Live.Libs</name>
+    </assembly>
+    <members>
+        <member name="T:Live.Libs.AesHelper">
+            <summary>
+            AES加密小幫手
+            </summary>
+        </member>
+        <member name="M:Live.Libs.AesHelper.Encrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="plainText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.AesHelper.Encrypt(System.String,System.String,System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="plainText"></param>
+            <param name="key"></param>
+            <param name="iv"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.AesHelper.Decrypt(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="cipherText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.AesHelper.Decrypt(System.String,System.String,System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="key"></param>
+            <param name="iv"></param>
+            <param name="cipherText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.AesHelper.EncryptHex(System.String,System.String,System.String)">
+            <summary>
+            加密-16進制輸出
+            </summary>
+            <param name="key">key</param>
+            <param name="iv">iv</param>
+            <param name="str">待加密字串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.AesHelper.DecryptHex(System.String,System.String,System.String)">
+            <summary>
+            解密-16進制輸入
+            </summary>
+            <param name="key">key</param>
+            <param name="iv">iv</param>
+            <param name="encryptStr">待解密字串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.AesHelper.SqlConnectionStringDecrypt(System.String)">
+            <summary>
+            連線字串解密
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.AchievementTitlesCategory">
+            <summary>
+            成就稱號列舉
+            </summary>
+        </member>
+        <member name="F:Live.Libs.AchievementTitlesCategory.CreativeGenius">
+            <summary>
+            創作奇才
+            </summary>
+        </member>
+        <member name="F:Live.Libs.AchievementTitlesCategory.ReplyExpert">
+            <summary>
+            回覆專家
+            </summary>
+        </member>
+        <member name="F:Live.Libs.AchievementTitlesCategory.SelectionMaster">
+            <summary>
+            選擇大師
+            </summary>
+        </member>
+        <member name="F:Live.Libs.AchievementTitlesCategory.InfluentialFigure">
+            <summary>
+            風雲人物
+            </summary>
+        </member>
+        <member name="F:Live.Libs.AchievementTitlesCategory.PraiseAmbassador">
+            <summary>
+            讚美大使
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KeepAliveConn.KeepConnectAction">
+            <summary>
+            持續推送通知
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.KeepConnectAction.Action">
+            <summary>
+            指令字串
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.KeepConnectAction.SerialNumberQty">
+            <summary>
+            所需流水號
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.KeepConnectAction.Direct">
+            <summary>
+            指令目標
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KeepAliveConn.ReactTimeAction">
+            <summary>
+            反應時間通知
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ReactTimeAction.#ctor">
+            <summary>
+            建構子
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ReactTimeAction.Action">
+            <summary>
+            指令字串
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ReactTimeAction.SerialNumberQty">
+            <summary>
+            所需流水號
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ReactTimeAction.Direct">
+            <summary>
+            指令目標
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Live.Libs.KeepAliveConn.ReactTimeAction.RandomContent">
+            <summary>
+            亂數內容
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KeepAliveConn.ActionBase">
+            <summary>
+            Action基礎類別
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ActionBase.Action">
+            <summary>
+            指令字串
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ActionBase.SerialNumberQty">
+            <summary>
+            流水號數量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ActionBase.Direct">
+            <summary>
+            指令目標
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ActionBase.ToString">
+            <summary>
+            序列化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KeepAliveConn.DirectType">
+            <summary>
+            Action 方向
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KeepAliveConn.DirectType.None">
+            <summary>
+            不做傳遞動作
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KeepAliveConn.DirectType.ToRelayService">
+            <summary>
+            傳給RS
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KeepAliveConn.DirectType.ToMicroService">
+            <summary>
+            傳給微服務
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KeepAliveConn.ActionModule">
+            <summary>
+            長連接模組
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KeepAliveConn.ActionModule.Action">
+            <summary>
+            指令
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KeepAliveConn.ActionModule.SerialNumber">
+            <summary>
+            流水號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KeepAliveConn.ActionModule.Message">
+            <summary>
+            指令內容
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ActionModule.ToProto">
+            <summary>
+            轉Protobuf
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ActionModule.ToString">
+            <summary>
+            物件轉Json結構字串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ActionModule.ToConstruct(System.Byte[])">
+            <summary>
+            轉強型別
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.ActionModule.FromString(System.String)">
+            <summary>
+            轉強型別
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KeepAliveConn.HubSetting">
+            <summary>
+            signalr 設定
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KeepAliveConn.HubSetting.ProxyListenContent">
+            <summary>
+            單量監聽的項目
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KeepAliveConn.HubSetting.ProxySendContent">
+            <summary>
+            單量請求項目
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KeepAliveConn.HubSetting.ProxyGetContent">
+            <summary>
+            同步請求項目
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KeepAliveConn.IMicroServiceActionHandler">
+            <summary>
+            處裡RS 傳來的 Action介面
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KeepAliveConn.IMicroServiceActionHandler.ExecuteAction(Live.Libs.KeepAliveConn.ActionModule)">
+            <summary>
+            處理Action事務
+            </summary>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KeepAliveConn.NotifyType">
+            <summary>
+            通知類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KeepAliveConn.NotifyType.None">
+            <summary>
+            不通知
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KeepAliveConn.NotifyType.Signal">
+            <summary>
+            單一對象
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KeepAliveConn.NotifyType.BroadCast">
+            <summary>
+            廣播
+            </summary>
+        </member>
+        <member name="T:Live.Libs.PrivateTimeFlowType">
+            <summary>
+            私密時數異動紀錄類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.PrivateTimeFlowType.Purchase">
+            <summary>
+            購買
+            </summary>
+        </member>
+        <member name="F:Live.Libs.PrivateTimeFlowType.Use">
+            <summary>
+            使用
+            </summary>
+        </member>
+        <member name="F:Live.Libs.PrivateTimeFlowType.Clear">
+            <summary>
+            清除
+            </summary>
+        </member>
+        <member name="T:Live.Libs.BalanceFlowType">
+            <summary>
+            點數異動紀錄類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.Gift">
+            <summary>
+            贈禮
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.PrivateTime">
+            <summary>
+            購買私密時數
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.Clear">
+            <summary>
+            重置
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.Inc">
+            <summary>
+            加點
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.Dec">
+            <summary>
+            扣點
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.BIn">
+            <summary>
+            B站主帳戶轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.BOut">
+            <summary>
+            B站主帳戶轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.ColorBallIn">
+            <summary>
+            彩球傳入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.ColorBallOut">
+            <summary>
+            彩球轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AGFishIn">
+            <summary>
+            AG越捕魚轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AGFishOut">
+            <summary>
+            AG越捕魚轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.HGIn">
+            <summary>
+            HG轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.HGOut">
+            <summary>
+            HG轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OBFishIn">
+            <summary>
+            OB捕魚轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OBFishOut">
+            <summary>
+            OB捕魚轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AGIn">
+            <summary>
+            AG轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AGOut">
+            <summary>
+            AG轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OBSIn">
+            <summary>
+            OB電子轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OBSOut">
+            <summary>
+            OB電子轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.DDDIn">
+            <summary>
+            3D轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.DDDOut">
+            <summary>
+            3D轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.FCIn">
+            <summary>
+            FC轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.FCOut">
+            <summary>
+            FC轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.SabaIn">
+            <summary>
+            沙巴轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.SabaOut">
+            <summary>
+            沙巴轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OGIn">
+            <summary>
+            OG轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OGOut">
+            <summary>
+            OG轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.BBINIn">
+            <summary>
+            BBIN轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.BBINOut">
+            <summary>
+            BBIN轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.ABIn">
+            <summary>
+            BBIN轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.ABOut">
+            <summary>
+            BBIN轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OBBTIn">
+            <summary>
+            OB對戰轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OBBTOut">
+            <summary>
+            OB對站轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.CMDIn">
+            <summary>
+            CMD轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.CMDOut">
+            <summary>
+            CMD轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.BNGIn">
+            <summary>
+            BNG轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.BNGOut">
+            <summary>
+            BNG轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.BKIn">
+            <summary>
+            B站K站轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.BKOut">
+            <summary>
+            B站K站轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.CQ9In">
+            <summary>
+            CQ9轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.CQ9Out">
+            <summary>
+            CQ9轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.DTIn">
+            <summary>
+            DT轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.DTOut">
+            <summary>
+            DT轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.VRIn">
+            <summary>
+            VR轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.VROut">
+            <summary>
+            VR轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.LCIn">
+            <summary>
+            LC轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.LCOut">
+            <summary>
+            LC轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KYIn">
+            <summary>
+            KY轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KYOut">
+            <summary>
+            KY轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.PINIn">
+            <summary>
+            PIN轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.PINOut">
+            <summary>
+            PIN轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KNBBIn">
+            <summary>
+            K站NBB轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KNBBOut">
+            <summary>
+            K站NBB轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.WMIn">
+            <summary>
+            WM真人轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.WMOut">
+            <summary>
+            WM真人轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KAIn">
+            <summary>
+            KA轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KAOut">
+            <summary>
+            KA轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.DGIn">
+            <summary>
+            DG轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.DGOut">
+            <summary>
+            DG轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.SAIn">
+            <summary>
+            SA轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.SAOut">
+            <summary>
+            SA轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.DSIn">
+            <summary>
+            DS轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.DSOut">
+            <summary>
+            DS轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.RK5In">
+            <summary>
+            RK轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.RK5Out">
+            <summary>
+            RK轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.SMIn">
+            <summary>
+            SM轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.SMOut">
+            <summary>
+            SM轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AVIAIn">
+            <summary>
+            AVIA轉入(待廢棄)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AVIAOut">
+            <summary>
+            AVIA轉出(待廢棄)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.IMIn">
+            <summary>
+            IM轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.IMOut">
+            <summary>
+            IM轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AELiveIn">
+            <summary>
+            AELive轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AELiveOut">
+            <summary>
+            AELive轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KSIn">
+            <summary>
+            KS轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KSOut">
+            <summary>
+            KS轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.PGIn">
+            <summary>
+            PG轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.PGOut">
+            <summary>
+            PG轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.EVOIn">
+            <summary>
+            EVO轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.EVOOut">
+            <summary>
+            EVO轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AIIn">
+            <summary>
+            AI轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.AIOut">
+            <summary>
+            AI轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.FTGIn">
+            <summary>
+            FTG轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.FTGOut">
+            <summary>
+            FTG轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OB_SportIn">
+            <summary>
+            OB體育轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OB_SportOut">
+            <summary>
+            OB體育轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OB_RealIn">
+            <summary>
+            OB真人轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OB_RealOut">
+            <summary>
+            OB真人轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OB_ESportsIn">
+            <summary>
+            OB電競轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.OB_ESportsOut">
+            <summary>
+            OB電競轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.WGIn">
+            <summary>
+            WG彩票轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.WGOut">
+            <summary>
+            WG彩票轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.HSGIn">
+            <summary>
+            HSG轉入(待廢棄)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.HSGOut">
+            <summary>
+            HSG轉出(待廢棄)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.XGIn">
+            <summary>
+            XG轉入(待廢棄)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.XGOut">
+            <summary>
+            XG轉出(待廢棄)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KCNIn">
+            <summary>
+            K站簡站轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KCNOut">
+            <summary>
+            K站簡站轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KVIIn">
+            <summary>
+            K站越站轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KVIOut">
+            <summary>
+            K站越站轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KThIn">
+            <summary>
+            K站泰站轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KThOut">
+            <summary>
+            K站泰站轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KIdIn">
+            <summary>
+            K站印尼站轉入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.KIdOut">
+            <summary>
+            K站印尼站轉出
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.UnKnowIn">
+            <summary>
+            未知轉點傳入
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BalanceFlowType.UnKnowOut">
+            <summary>
+            未知轉點傳出
+            </summary>
+        </member>
+        <member name="T:Live.Libs.CoinType">
+            <summary>
+            扣款幣別
+            </summary>
+        </member>
+        <member name="F:Live.Libs.CoinType.SmCoin">
+            <summary>
+            SM幣
+            </summary>
+        </member>
+        <member name="F:Live.Libs.CoinType.KFreeCoin">
+            <summary>
+            K站免費幣
+            </summary>
+        </member>
+        <member name="F:Live.Libs.CoinType.BFreeCoin">
+            <summary>
+            B站免費幣
+            </summary>
+        </member>
+        <member name="F:Live.Libs.CoinType.NbbCoin">
+            <summary>
+            NBB幣
+            </summary>
+        </member>
+        <member name="F:Live.Libs.CoinType.NbbKFreeCoin">
+            <summary>
+            NBB使用K站免費幣
+            </summary>
+        </member>
+        <member name="F:Live.Libs.CoinType.NbbBFreeCoin">
+            <summary>
+            NBB使用B站免費幣
+            </summary>
+        </member>
+        <member name="T:Live.Libs.DeviceType">
+            <summary>
+            客戶裝置列舉
+            </summary>
+        </member>
+        <member name="F:Live.Libs.DeviceType.PC">
+            <summary>
+            電腦網頁
+            </summary>
+        </member>
+        <member name="F:Live.Libs.DeviceType.Mobile">
+            <summary>
+            行動網頁
+            </summary>
+        </member>
+        <member name="F:Live.Libs.DeviceType.Android">
+            <summary>
+            安卓原生
+            </summary>
+        </member>
+        <member name="F:Live.Libs.DeviceType.IOS">
+            <summary>
+            蘋果原生
+            </summary>
+        </member>
+        <member name="F:Live.Libs.DeviceType.WebAPP">
+            <summary>
+            包網APP
+            </summary>
+        </member>
+        <member name="T:Live.Libs.DomainType">
+            <summary>
+            源類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.DomainType.None">
+            <summary>
+            未區分
+            </summary>
+        </member>
+        <member name="F:Live.Libs.DomainType.General">
+            <summary>
+            一般
+            </summary>
+        </member>
+        <member name="F:Live.Libs.DomainType.Adult">
+            <summary>
+            成人
+            </summary>
+        </member>
+        <member name="T:Live.Libs.InfoMode">
+            <summary>
+            資訊模式
+            </summary>
+        </member>
+        <member name="F:Live.Libs.InfoMode.RankBoard">
+            <summary>
+            排行榜
+            </summary>
+        </member>
+        <member name="F:Live.Libs.InfoMode.AnchorRankBoard">
+            <summary>
+            主播排行榜
+            </summary>
+        </member>
+        <member name="F:Live.Libs.InfoMode.UserRankBoard">
+            <summary>
+            會員貢獻榜
+            </summary>
+        </member>
+        <member name="F:Live.Libs.InfoMode.AnchorInfo">
+            <summary>
+            主播資訊
+            </summary>
+        </member>
+        <member name="F:Live.Libs.InfoMode.AnchorLiveTime">
+            <summary>
+            主播開播時間
+            </summary>
+        </member>
+        <member name="F:Live.Libs.InfoMode.AnchorHome">
+            <summary>
+            主播首頁
+            </summary>
+        </member>
+        <member name="F:Live.Libs.InfoMode.ScheduleTable">
+            <summary>
+            直播表
+            </summary>
+        </member>
+        <member name="F:Live.Libs.InfoMode.AnchorScheduleTable">
+            <summary>
+            美女直播表
+            </summary>
+        </member>
+        <member name="F:Live.Libs.InfoMode.GameSportScheduleTable">
+            <summary>
+            體育直播表
+            </summary>
+        </member>
+        <member name="T:Live.Libs.JwtHelper">
+            <summary>
+            JWT 小幫手
+            </summary>
+        </member>
+        <member name="M:Live.Libs.JwtHelper.Encode(System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.Int32)">
+            <summary>
+            加密
+            </summary>
+            <param name="dic">payload info (裡面塞會員資訊)</param>
+            <param name="secret">私有鑰</param>
+            <param name="expireSec">過期秒數</param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.JwtHelper.Decode(System.String,System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="token"></param>
+            <param name="secret">私有鑰</param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.KFreeCoinHelper">
+            <summary>
+            K站免費幣小工具
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.KFreeCoinHelper.GetEcryptionCode(System.String)">
+            <summary>
+            取得加密字串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.BatchGetOrderRequest">
+            <summary>
+            批次取訂單請求結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.BatchGetOrderRequest.GenerateInstance(System.String,System.String,System.String,System.String)">
+            <summary>
+            建立實例
+            </summary>
+            <param name="securityCode">securityCode</param>
+            <param name="serviceId">遊戲平台代號</param>
+            <param name="startTime">開始時間</param>
+            <param name="endTime">結束時間</param>
+            <returns></returns>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderRequest.ServiceID">
+            <summary>
+            遊戲平台代號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderRequest.StartTime">
+            <summary>
+            開始時間 (yyyy-MM-dd HH:mm:ss (查詢區間為 24hr))
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderRequest.EndTime">
+            <summary>
+            結束時間 (yyyy-MM-dd HH:mm:ss (查詢區間為 24hr))
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderRequest.SignCode">
+            <summary>
+            檢核碼
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.BatchGetOrderRequest.ToString">
+            <summary>
+            序列化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse">
+            <summary>
+            批次訂單狀態請求成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse.Data">
+            <summary>
+            回傳結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse.SuccessResponse">
+            <summary>
+            成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse.SuccessResponse.TransactoinNumber">
+            <summary>
+            交易編號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse.SuccessResponse.AccountID">
+            <summary>
+            帳號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse.SuccessResponse.TransactionAmount">
+            <summary>
+            當次交易點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse.SuccessResponse.BalanceAmount">
+            <summary>
+            當次剩餘點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse.SuccessResponse.Note">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderSuccessResponse.SuccessResponse.OrderTime">
+            <summary>
+            交易時間 (2019-03-11 16:03:46)
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.BatchGetOrderFailResponse">
+            <summary>
+            批次訂單狀態請求失敗回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderFailResponse.Error">
+            <summary>
+            錯誤結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.BatchGetOrderFailResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.BatchGetOrderFailResponse.FailResponse">
+            <summary>
+            失敗回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderFailResponse.FailResponse.Code">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.BatchGetOrderFailResponse.FailResponse.Message">
+            <summary>
+            訊息
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetOrderRequest">
+            <summary>
+            查找訂單請求結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.GetOrderRequest.GenerateInstance(System.String,System.String,System.String)">
+            <summary>
+            建立實例
+            </summary>
+            <param name="securityCode">securityCode</param>
+            <param name="serviceId">遊戲平台代號</param>
+            <param name="transactoinNumber">單號 (訂單號，每次請求不重複)</param>
+            <returns></returns>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderRequest.ServiceID">
+            <summary>
+            遊戲平台代號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderRequest.TransactoinNumber">
+            <summary>
+            單號 (訂單號，每次請求不重複)
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderRequest.SignCode">
+            <summary>
+            檢核碼
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.GetOrderRequest.ToString">
+            <summary>
+            序列化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse">
+            <summary>
+            訂單狀態請求成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse.Data">
+            <summary>
+            成功結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse.SuccessResponse">
+            <summary>
+            成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse.SuccessResponse.TransactoinNumber">
+            <summary>
+            交易編號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse.SuccessResponse.AccountID">
+            <summary>
+            帳號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse.SuccessResponse.TransactionAmount">
+            <summary>
+            當次交易點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse.SuccessResponse.BalanceAmount">
+            <summary>
+            當次剩餘點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse.SuccessResponse.Note">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderSuccessResponse.SuccessResponse.OrderTime">
+            <summary>
+            交易時間 (2019-03-11 16:03:46)
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetOrderFailResponse">
+             <summary>
+            訂單狀態請求失敗回傳結構
+             </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderFailResponse.Error">
+            <summary>
+            錯誤結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.GetOrderFailResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetOrderFailResponse.FailResponse">
+            <summary>
+            失敗回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderFailResponse.FailResponse.Code">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetOrderFailResponse.FailResponse.Message">
+            <summary>
+            訊息
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetPointRequest">
+            <summary>
+            查詢會員點數請求結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.GetPointRequest.GenerateInstance(System.String,System.String,System.String)">
+            <summary>
+            建立實例
+            </summary>
+            <param name="securityCode">securityCode</param>
+            <param name="serviceId">遊戲平台代號</param>
+            <param name="accountId">帳號(不含站別)</param>
+            <returns></returns>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetPointRequest.ServiceID">
+            <summary>
+            遊戲平台代號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetPointRequest.AccountID">
+            <summary>
+            帳號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetPointRequest.SignCode">
+            <summary>
+            檢核碼
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.GetPointRequest.ToString">
+            <summary>
+            序列化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetPointSuccessResponse">
+            <summary>
+            取點請求成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetPointSuccessResponse.Data">
+            <summary>
+            成功結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.GetPointSuccessResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetPointSuccessResponse.SuccessResponse">
+            <summary>
+            成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetPointSuccessResponse.SuccessResponse.Points">
+            <summary>
+            點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetPointSuccessResponse.SuccessResponse.Message">
+            <summary>
+            回傳訊息
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetPointFailResponse">
+            <summary>
+            取點請求失敗回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetPointFailResponse.Error">
+            <summary>
+            錯誤結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.GetPointFailResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.GetPointFailResponse.FailResponse">
+            <summary>
+            失敗回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetPointFailResponse.FailResponse.Code">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.GetPointFailResponse.FailResponse.Message">
+            <summary>
+            訊息
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.WithdrawRequest">
+            <summary>
+            扣款請求結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.WithdrawRequest.GenerateInstance(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            建立實例
+            </summary>
+            <param name="securityCode">securityCode</param>
+            <param name="serviceId">遊戲平台代號</param>
+            <param name="accountId">帳號(不含站別)</param>
+            <param name="transactionAmount">點數 (需包含小數點兩位 ex: 20.00)</param>
+            <param name="transactoinNumber">單號 (訂單號，每次請求不重複)</param>
+            <param name="note">備註</param>
+            <returns></returns>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawRequest.ServiceID">
+            <summary>
+            遊戲平台代號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawRequest.AccountID">
+            <summary>
+            帳號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawRequest.TransactionAmount">
+            <summary>
+            點數 (需包含小數點兩位 ex: 20.00)
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawRequest.TransactoinNumber">
+            <summary>
+            單號 (訂單號，每次請求不重複)
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawRequest.SignCode">
+            <summary>
+            檢核碼
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawRequest.Note">
+            <summary>
+            備註 此欄位不需加入 SignCode 計算
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawRequest.McType">
+            <summary>
+            送禮類型
+            1：主播
+            2：荷官
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.WithdrawRequest.ToString">
+            <summary>
+            序列化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.WithdrawSuccessResponse">
+            <summary>
+            扣款請求成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawSuccessResponse.Data">
+            <summary>
+            成功結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.WithdrawSuccessResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.WithdrawSuccessResponse.SuccessResponse">
+            <summary>
+            成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawSuccessResponse.SuccessResponse.BeforePoints">
+            <summary>
+            扣點前點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawSuccessResponse.SuccessResponse.AfterPoints">
+            <summary>
+            扣點後點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawSuccessResponse.SuccessResponse.Message">
+            <summary>
+            訊息
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.WithdrawFailResponse">
+            <summary>
+            扣款請求失敗回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawFailResponse.Error">
+            <summary>
+            錯誤結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Model.WithdrawFailResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Model.WithdrawFailResponse.FailResponse">
+            <summary>
+            失敗回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawFailResponse.FailResponse.Code">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="P:Live.Libs.KFreeCoin.Model.WithdrawFailResponse.FailResponse.Message">
+            <summary>
+            訊息
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Service.IKFreeCoinService">
+            <summary>
+            KU免費幣小幫手
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Service.IKFreeCoinService.GetOrder(Live.Libs.KFreeCoin.Model.GetOrderRequest)">
+            <summary>
+            訂單查詢
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Service.IKFreeCoinService.GetOrder(Live.Libs.KFreeCoin.Model.BatchGetOrderRequest)">
+            <summary>
+            批次訂單查詢
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Service.IKFreeCoinService.GetPoint(Live.Libs.KFreeCoin.Model.GetPointRequest)">
+            <summary>
+            取會員當前點數
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Service.IKFreeCoinService.Withdraw(Live.Libs.KFreeCoin.Model.WithdrawRequest)">
+            <summary>
+            提款
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.KFreeCoin.Service.KFreeCoinService">
+            <summary>
+            K站免費幣
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KFreeCoin.Service.KFreeCoinService.serviceUri">
+            <summary>
+            domain
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KFreeCoin.Service.KFreeCoinService.timeout">
+            <summary>
+            逾時時間
+            </summary>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Service.KFreeCoinService.#ctor(System.String,System.Int32)">
+            <summary>
+            建構子
+            </summary>
+            <param name="serviceUri">服務位址</param>
+            <param name="timeout">逾時(秒)</param>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Service.KFreeCoinService.GetOrder(Live.Libs.KFreeCoin.Model.GetOrderRequest)">
+            <summary>
+            訂單查詢
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Service.KFreeCoinService.GetOrder(Live.Libs.KFreeCoin.Model.BatchGetOrderRequest)">
+            <summary>
+            批次訂單查詢
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Service.KFreeCoinService.GetPoint(Live.Libs.KFreeCoin.Model.GetPointRequest)">
+            <summary>
+            取會員當前點數
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.KFreeCoin.Service.KFreeCoinService.Withdraw(Live.Libs.KFreeCoin.Model.WithdrawRequest)">
+            <summary>
+            提款
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.LanguageType">
+            <summary>
+            語系
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageType.None">
+            <summary>
+            未區分
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageType.Tw">
+            <summary>
+            繁體
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageType.Cn">
+            <summary>
+            簡體
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageType.En">
+            <summary>
+            英文
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageType.Vi">
+            <summary>
+            越文
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageType.Th">
+            <summary>
+            泰文
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageType.Wd">
+            <summary>
+            31站文
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageType.Id">
+            <summary>
+            印尼文
+            </summary>
+        </member>
+        <member name="T:Live.Libs.LanguageHelper">
+            <summary>
+            語系小幫手
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageHelper.Sites">
+            <summary>
+            站別集合 
+            201: KU討論區繁體
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageHelper.twGroup">
+            <summary>
+            繁站集合
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageHelper.cnGroup">
+            <summary>
+            簡站集合
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageHelper.enGroup">
+            <summary>
+            英站集合
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageHelper.viGroup">
+            <summary>
+            越站集合
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageHelper.thGroup">
+            <summary>
+            泰站集合
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageHelper.wdGroup">
+            <summary>
+            31站集合
+            </summary>
+        </member>
+        <member name="F:Live.Libs.LanguageHelper.idGroup">
+            <summary>
+            印尼站集合
+            </summary>
+        </member>
+        <member name="M:Live.Libs.LanguageHelper.FromSite(System.Byte)">
+            <summary>
+            站別轉語系
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.MD5Helper">
+            <summary>
+            取得MD5格式小幫手
+            </summary>
+        </member>
+        <member name="M:Live.Libs.MD5Helper.GetMd5Str(System.String)">
+            <summary>
+            MD5 16位加密
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.MD5Helper.ComposeToMD5(System.String)">
+            <summary>
+            取得MD5字串
+            </summary>
+            <param name="text">字串</param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.PlatformType">
+            <summary>
+            平台類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.PlatformType.None">
+            <summary>
+            不存在
+            </summary>
+        </member>
+        <member name="F:Live.Libs.PlatformType.B">
+            <summary>
+            B站
+            </summary>
+        </member>
+        <member name="F:Live.Libs.PlatformType.K">
+            <summary>
+            K站
+            </summary>
+        </member>
+        <member name="F:Live.Libs.PlatformType.W">
+            <summary>
+            31站
+            </summary>
+        </member>
+        <member name="T:Live.Libs.PlatformHelper">
+            <summary>
+            平台工具小幫手
+            </summary>
+        </member>
+        <member name="M:Live.Libs.PlatformHelper.FromSite(System.Byte)">
+            <summary>
+            站別轉平台
+            </summary>
+            <param name="site"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.ProgramMode">
+            <summary>
+            節目模式
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramMode.NonSmSport">
+            <summary>
+            非Sm的體育轉播
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramMode.Sport">
+            <summary>
+            體育轉播
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramMode.TV">
+            <summary>
+            節目轉播
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramMode.Anchor">
+            <summary>
+            美女節目
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramMode.Activity">
+            <summary>
+            活動節目
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramMode.StraightSport">
+            <summary>
+            單式運動
+            </summary>
+        </member>
+        <member name="T:Live.Libs.ProgramType">
+            <summary>
+            節目類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.Anchor">
+            <summary>
+            主播
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.None">
+            <summary>
+            未區分
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.SC">
+            <summary>
+            足球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.BK">
+            <summary>
+            籃球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.BB">
+            <summary>
+            棒球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.TN">
+            <summary>
+            網球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.IH">
+            <summary>
+            冰球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.VL">
+            <summary>
+            排球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.BM">
+            <summary>
+            羽毛球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.ES">
+            <summary>
+            電子競技
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.AF">
+            <summary>
+            美式足球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.PB">
+            <summary>
+            撞球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.TT">
+            <summary>
+            乒乓
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.HB">
+            <summary>
+            手球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.WP">
+            <summary>
+            水球
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.Other">
+            <summary>
+            其他，目前是奧林匹克
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.EuropeCup">
+            <summary>
+            歐洲盃
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.WorldCup">
+            <summary>
+            世界盃
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.BX">
+            <summary>
+            拳擊
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.Olympic">
+            <summary>
+            奥林匹克 暫定49
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.Taiwan">
+            <summary>
+            台灣
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.China">
+            <summary>
+            中國
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.Vietnam">
+            <summary>
+            越南
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.Thailand">
+            <summary>
+            泰國
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.R18">
+            <summary>
+            成人
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.Indonesia">
+            <summary>
+            印尼
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.AnchorTw">
+            <summary>
+            直播(台灣)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.AnchorCn">
+            <summary>
+            直播(中國)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.AnchorVi">
+            <summary>
+            直播(越南)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.AnchorTh">
+            <summary>
+            直播(泰國)
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramType.AnchorId">
+            <summary>
+            直播(印尼)
+            </summary>
+        </member>
+        <member name="T:Live.Libs.ProgramTypeGroup">
+            <summary>
+            節目類型群組
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramTypeGroup.GameSport">
+            <summary>
+            賽事轉播類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramTypeGroup.ChannelLive">
+            <summary>
+            頻道直播類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ProgramTypeGroup.Anchor">
+            <summary>
+            直播主類型
+            </summary>
+        </member>
+        <member name="T:Live.Libs.KSourceAreaType">
+            <summary>
+            K站視訊源
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KSourceAreaType.Undifferentiated">
+            <summary>
+            未區分
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KSourceAreaType.TW">
+            <summary>
+            台灣區
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KSourceAreaType.PHI">
+            <summary>
+            菲律賓
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KSourceAreaType.VN">
+            <summary>
+            越南
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KSourceAreaType.TH">
+            <summary>
+            泰國
+            </summary>
+        </member>
+        <member name="F:Live.Libs.KSourceAreaType.ID">
+            <summary>
+            印尼
+            </summary>
+        </member>
+        <member name="T:Live.Libs.RankType">
+            <summary>
+            週與月排名類別
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekFirst">
+            <summary>
+            週第1名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekSecond">
+            <summary>
+            週第2名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekThird">
+            <summary>
+            週第3名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekFourth">
+            <summary>
+            週第4名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekFifth">
+            <summary>
+            週第5名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekSixth">
+            <summary>
+            週第6名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekSeventh">
+            <summary>
+            週第7名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekEighth">
+            <summary>
+            週第8名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekNinth">
+            <summary>
+            週第9名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.WeekTenth">
+            <summary>
+            週第10名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthFirst">
+            <summary>
+            月第1名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthSecond">
+            <summary>
+            月第2名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthThird">
+            <summary>
+            月第3名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthFourth">
+            <summary>
+            月第4名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthFifth">
+            <summary>
+            月第5名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthSixth">
+            <summary>
+            月第6名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthSeventh">
+            <summary>
+            月第7名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthEighth">
+            <summary>
+            月第8名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthNinth">
+            <summary>
+            月第9名
+            </summary>
+        </member>
+        <member name="F:Live.Libs.RankType.MonthTenth">
+            <summary>
+            月第10名
+            </summary>
+        </member>
+        <member name="T:Live.Libs.RankTypeExtension">
+            <summary>
+            RankType Extension
+            </summary>
+        </member>
+        <member name="M:Live.Libs.RankTypeExtension.ChatRankSymbolSort(System.Collections.Generic.IEnumerable{Live.Libs.RankType})">
+            <summary>
+            聊天顯示會員排名戳記排序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.ServiceType">
+            <summary>
+            服務類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ServiceType.None">
+            <summary>
+            無特定服務
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ServiceType.AlbumSystem">
+            <summary>
+            主播相簿
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ServiceType.Carousel">
+            <summary>
+            首頁輪播圖
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ServiceType.AnchorImg">
+            <summary>
+            主播頭像及個人照片
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ServiceType.AnchorVideo">
+            <summary>
+            主播影片
+            </summary>
+        </member>
+        <member name="F:Live.Libs.ServiceType.ForumSystem">
+            <summary>
+            討論區系統
+            </summary>
+        </member>
+        <member name="T:Live.Libs.LanguageSettingHelper">
+            <summary>
+            語系相關設定小幫手
+            </summary>
+        </member>
+        <member name="M:Live.Libs.LanguageSettingHelper.GetLangType(System.Int32)">
+            <summary>
+            語系總和轉換語系陣列
+            </summary>
+            <param name="rules"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.LanguageSettingHelper.GetLangCorrespondSum(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            勾選對應語系算出總值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.SourceType">
+            <summary>
+            視訊來源出處
+            </summary>
+        </member>
+        <member name="F:Live.Libs.SourceType.None">
+            <summary>
+            未區分
+            </summary>
+        </member>
+        <member name="F:Live.Libs.SourceType.B">
+            <summary>
+            B站
+            </summary>
+        </member>
+        <member name="F:Live.Libs.SourceType.K">
+            <summary>
+            K站
+            </summary>
+        </member>
+        <member name="F:Live.Libs.SourceType.Radar">
+            <summary>
+            雷達
+            </summary>
+        </member>
+        <member name="T:Live.Libs.StorageEventHelper">
+            <summary>
+            儲存系統事件名稱轉換小幫手
+            </summary>
+        </member>
+        <member name="M:Live.Libs.StorageEventHelper.FromEventName(System.String)">
+            <summary>
+            從原始名稱轉程可讀名稱
+            </summary>
+            <param name="eventName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.StorageBucketHelper">
+            <summary>
+            Bucket小幫手
+            </summary>
+        </member>
+        <member name="M:Live.Libs.StorageBucketHelper.FromServiceType(Live.Libs.ServiceType)">
+            <summary>
+            透過ServiceType取得Bucket名稱
+            </summary>
+            <param name="serviceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.StorageBucketHelper.PathConvert(System.String)">
+            <summary>
+            轉換成Bucket使用的路徑格式
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.TimeStampHelper">
+            <summary>
+            時間格式小幫手
+            </summary>
+        </member>
+        <member name="P:Live.Libs.TimeStampHelper.UtcNow">
+            <summary>
+            現在UtcTimeStamp
+            </summary>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.ToLocalDateTime(System.Int64)">
+            <summary>
+            utcTimeStamp轉地區時間
+            </summary>
+            <param name="utcTimeStamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.ToLocalDateTime(System.String)">
+            <summary>
+            時間字串格式轉地區時間
+            </summary>
+            <param name="datetimeString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.UnixTimeStampToLocalDateTime(System.Int64)">
+            <summary>
+            unix轉地區時間
+            </summary>
+            <param name="unixTimeStamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.ToUtcDateTime(System.Int64)">
+            <summary>
+            utcTimeStamp轉UTC時間
+            </summary>
+            <param name="utcTimeStamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.ToUtcTimeStamp(System.DateTime)">
+            <summary>
+            地區時間轉utcTimeStamp
+            </summary>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.ToUtcTimeStamp(System.String)">
+            <summary>
+            時間字串轉utcTimeStamp
+            </summary>
+            <param name="datetimeString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.ToCron7(System.DateTime)">
+            <summary>
+            Cron7表達式
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.ToCron5(System.DateTime)">
+            <summary>
+            Cron5表達式
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.Truncate(System.DateTime,System.TimeSpan)">
+            <summary>
+            時間Truncate
+            </summary>
+            <param name="dateTime"></param>
+            <param name="timeSpan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.GTM">
+            <summary>
+            GTM時間
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.TimeStampHelper.UtcDateTimeToUtcTimeStamp(System.DateTime)">
+            <summary>
+            UTC時間轉utcTimeStamp
+            </summary>
+            <param name="utcDatetime"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Model.BatchGetOrderRequest">
+            <summary>
+            批次取訂單請求結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderRequest.Party">
+            <summary>
+            遊戲代號 固定給SM
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderRequest.Site">
+            <summary>
+            站別
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderRequest.SrartDateTime">
+            <summary>
+            開始時間 (yyyy-MM-dd HH:mm:ss (查詢區間為 24hr))
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderRequest.EndDateTime">
+            <summary>
+            結束時間 (yyyy-MM-dd HH:mm:ss (查詢區間為 24hr))
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Model.BatchGetOrderRequest.ToString">
+            <summary>
+            序列化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse">
+            <summary>
+            批次訂單狀態請求成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.Code">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.Data">
+            <summary>
+            回傳結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent">
+            <summary>
+            回椽子結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.WId">
+            <summary>
+            單號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.Member">
+            <summary>
+            平台帳號 注意不含站別
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.Point">
+            <summary>
+            點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.AfterBalance">
+            <summary>
+            異動後餘額
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.Content">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.Time">
+            <summary>
+            扣點時間 yyyy-MM-dd HH:mm:ss.fff
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.Majordomo">
+            <summary>
+            總監
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.Bigpartner">
+            <summary>
+            大股東
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.Partner">
+            <summary>
+            股東
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.Generalagent">
+            <summary>
+            總代理
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.BatchGetOrderResponse.ResponseContent.Alagent">
+            <summary>
+            代理
+            </summary>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Model.GetOrderRequest">
+            <summary>
+            查找訂單請求結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetOrderRequest.Party">
+            <summary>
+            遊戲代號 固定給SM
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetOrderRequest.Site">
+            <summary>
+            站別
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetOrderRequest.WId">
+            <summary>
+            單號
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Model.GetOrderRequest.ToString">
+            <summary>
+            序列化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Model.GetOrderResponse">
+            <summary>
+            訂單狀態請求成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetOrderResponse.Code">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetOrderResponse.WId">
+            <summary>
+            單號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetOrderResponse.Point">
+            <summary>
+            點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetOrderResponse.Member">
+            <summary>
+            平台帳號 注意不含站別
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Model.GetOrderResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Model.GetPointRequest">
+            <summary>
+            查詢會員點數請求結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetPointRequest.Party">
+            <summary>
+            遊戲代號 固定給SM
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetPointRequest.Member">
+            <summary>
+            平台帳號 注意不含站別
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetPointRequest.Site">
+            <summary>
+            站別
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Model.GetPointRequest.ToString">
+            <summary>
+            序列化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Model.GetPointResponse">
+            <summary>
+            取點請求成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetPointResponse.Code">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.GetPointResponse.Balance">
+            <summary>
+            剩餘點數
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Model.GetPointResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Model.WithdrawRequest">
+            <summary>
+            扣款請求結構
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Model.WithdrawRequest.GenerateInstance(System.String,System.String,System.Byte,System.Int32,System.String)">
+            <summary>
+            建立實例
+            </summary>
+            <param name="secretCode">B站密鑰</param>
+            <param name="member">平台帳號 注意不含站別</param>
+            <param name="site">站別</param>
+            <param name="point">點數</param>
+            <param name="wId">單號</param>
+            <returns></returns>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawRequest.Party">
+            <summary>
+            遊戲代號 固定給SM
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawRequest.Member">
+            <summary>
+            平台帳號 注意不含站別
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawRequest.Site">
+            <summary>
+            站別
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawRequest.Point">
+            <summary>
+            點數
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawRequest.WId">
+            <summary>
+            單號
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawRequest.Content">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawRequest.Key">
+            <summary>
+            驗證字串
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Model.WithdrawRequest.ToString">
+            <summary>
+            序列化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Model.WithdrawResponse">
+            <summary>
+            扣款請求成功回傳結構
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawResponse.Code">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawResponse.BeforeBalance">
+            <summary>
+            異動前餘額
+            </summary>
+        </member>
+        <member name="P:Live.Libs.BFreeCoin.Model.WithdrawResponse.AfterBalance">
+            <summary>
+            異動後餘額
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Model.WithdrawResponse.FromString(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Service.IBFreeCoinService">
+            <summary>
+            B站免費幣服務
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Service.IBFreeCoinService.GetOrder(Live.Libs.BFreeCoin.Model.GetOrderRequest)">
+            <summary>
+            訂單查詢
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Service.IBFreeCoinService.GetOrder(Live.Libs.BFreeCoin.Model.BatchGetOrderRequest)">
+            <summary>
+            批次訂單查詢
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Service.IBFreeCoinService.GetPoint(Live.Libs.BFreeCoin.Model.GetPointRequest)">
+            <summary>
+            取剩餘點數
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Service.IBFreeCoinService.Withdraw(Live.Libs.BFreeCoin.Model.WithdrawRequest)">
+            <summary>
+            提款
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.Service.BFreeCoinService">
+            <summary>
+            B站免費幣服務
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BFreeCoin.Service.BFreeCoinService.serviceUri">
+            <summary>
+            domain
+            </summary>
+        </member>
+        <member name="F:Live.Libs.BFreeCoin.Service.BFreeCoinService.timeout">
+            <summary>
+            逾時時間
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Service.BFreeCoinService.#ctor(System.String,System.Int32)">
+            <summary>
+            建構子
+            </summary>
+            <param name="serviceUri">服務位址</param>
+            <param name="timeout">逾時(秒)</param>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Service.BFreeCoinService.GetOrder(Live.Libs.BFreeCoin.Model.GetOrderRequest)">
+            <summary>
+            訂單查詢
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Service.BFreeCoinService.GetOrder(Live.Libs.BFreeCoin.Model.BatchGetOrderRequest)">
+            <summary>
+            批次訂單查詢
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Service.BFreeCoinService.GetPoint(Live.Libs.BFreeCoin.Model.GetPointRequest)">
+            <summary>
+            取剩餘點數
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.Service.BFreeCoinService.Withdraw(Live.Libs.BFreeCoin.Model.WithdrawRequest)">
+            <summary>
+            提款
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.BFreeCoin.BFreeCoinHelper">
+            <summary>
+            B站免費幣小工具
+            </summary>
+        </member>
+        <member name="M:Live.Libs.BFreeCoin.BFreeCoinHelper.GetEcryptionCode(System.String)">
+            <summary>
+            取得加密字串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.UserModeType">
+            <summary>
+            使用者模式類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.UserModeType.SM">
+            <summary>
+            SM
+            </summary>
+        </member>
+        <member name="F:Live.Libs.UserModeType.WD">
+            <summary>
+            WD
+            </summary>
+        </member>
+        <member name="T:Live.Libs.UserType">
+            <summary>
+            使用者類型
+            </summary>
+        </member>
+        <member name="F:Live.Libs.UserType.Member">
+            <summary>
+            SM會員端
+            </summary>
+        </member>
+        <member name="F:Live.Libs.UserType.Company">
+            <summary>
+            SM公司端
+            </summary>
+        </member>
+        <member name="F:Live.Libs.UserType.NBB">
+            <summary>
+            NBB會員
+            </summary>
+        </member>
+        <member name="F:Live.Libs.UserType.Forum">
+            <summary>
+            討論區會員
+            </summary>
+        </member>
+        <member name="F:Live.Libs.UserType.Anchor">
+            <summary>
+            主播
+            </summary>
+        </member>
+    </members>
+</doc>

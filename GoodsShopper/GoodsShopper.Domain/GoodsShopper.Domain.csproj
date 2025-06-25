@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE8301BE-5625-4313-9A90-87F8CF43A68E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoodsShopper.Domain</RootNamespace>
+    <AssemblyName>GoodsShopper.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.2.4.4\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\BrandAction.cs" />
+    <Compile Include="Action\CategoryQueryAction.cs" />
+    <Compile Include="Action\CategoryInsertAction.cs" />
+    <Compile Include="Action\BrandInsertAction.cs" />
+    <Compile Include="Action\CategoryAction.cs" />
+    <Compile Include="Action\ProductAction.cs" />
+    <Compile Include="Action\BrandQueryAction.cs" />
+    <Compile Include="Action\GetProductAction.cs" />
+    <Compile Include="Action\ProductQueryAction.cs" />
+    <Compile Include="Action\ProductInsertAction.cs" />
+    <Compile Include="DTO\Category\CategoryQueryDto.cs" />
+    <Compile Include="DTO\Category\CategoryInsertDto.cs" />
+    <Compile Include="DTO\Brand\BrandInsertDto.cs" />
+    <Compile Include="DTO\Product\ProductInsertDto.cs" />
+    <Compile Include="DTO\Brand\BrandQueryDto.cs" />
+    <Compile Include="DTO\Product\ProductQueryDto.cs" />
+    <Compile Include="Model\Brand.cs" />
+    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\Channel.cs" />
+    <Compile Include="Model\Character.cs" />
+    <Compile Include="Model\Collection.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\ProductType.cs" />
+    <Compile Include="Model\Seller.cs" />
+    <Compile Include="Model\SellerType.cs" />
+    <Compile Include="Model\Style.cs" />
+    <Compile Include="Model\Transportation.cs" />
+    <Compile Include="Model\Work.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IBrandRepository.cs" />
+    <Compile Include="Repository\ICategoryRepository.cs" />
+    <Compile Include="Repository\IProductRepository.cs" />
+    <Compile Include="Service\BrandService.cs" />
+    <Compile Include="Service\IBrandService.cs" />
+    <Compile Include="Service\CategoryService.cs" />
+    <Compile Include="Service\ICategoryService.cs" />
+    <Compile Include="Service\ProductService.cs" />
+    <Compile Include="Service\IProductService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libs\Live.Libs\Live.Libs.csproj">
+      <Project>{38894a00-3203-4b05-ae8b-e18e7d539bbe}</Project>
+      <Name>Live.Libs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

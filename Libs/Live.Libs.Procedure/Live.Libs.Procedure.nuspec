@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <id>Live.Libs.Procedure</id>
+<version>1.0.1</version>
+        <authors>Carter</authors>
+        <owners>Carter</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Live Libs</description>
+        <copyright>Copyright 2020</copyright>
+        <dependencies>
+        </dependencies>
+    </metadata>
+</package>

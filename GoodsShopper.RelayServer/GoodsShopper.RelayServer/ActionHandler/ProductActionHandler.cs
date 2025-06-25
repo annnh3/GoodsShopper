@@ -1,0 +1,38 @@
+﻿using System;
+using GoodsShopper.Domain.Action;
+using GoodsShopper.RelayServer.Domain.Signalr;
+using GoodsShopper.RelayServer.Model.Service;
+using Live.Libs.KeepAliveConn;
+using Newtonsoft.Json;
+using NLog;
+
+namespace GoodsShopper.RelayServer.ActionHandler
+{
+    public class ProductActionHandler : IActionHandler
+    {
+        private readonly ILogger logger = LogManager.GetLogger("RelayServer");
+
+        private readonly ICacheService cacheSvc;
+
+        public ProductActionHandler(ICacheService cacheSvc)
+        {
+            this.cacheSvc = cacheSvc;
+        }
+
+        public override bool Execute(ActionModule actionModule)
+        {
+            try
+            {
+                var action = JsonConvert.DeserializeObject<ProductAction>(actionModule.Message);
+
+                cacheSvc.Upsert(new[] { action.Products });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex, $"{GetType().Name} Execute Exception");
+                return false;
+            }
+        }
+    }
+}

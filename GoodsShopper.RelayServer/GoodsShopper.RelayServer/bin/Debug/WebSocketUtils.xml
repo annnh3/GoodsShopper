@@ -1,0 +1,648 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebSocketUtils</name>
+    </assembly>
+    <members>
+        <member name="T:WebSocketUtils.Model.HandShakeInfo">
+            <summary>
+            握手資訊
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.HandShakeInfo.#ctor(System.String)">
+            <summary>
+            建構子
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.HandShakeInfo.Source">
+            <summary>
+            來源資料
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.HandShakeInfo.Path">
+            <summary>
+            來源url
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.HandShakeInfo.SecWebSocketKey">
+            <summary>
+            SecWebSocketKey
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.HandShakeInfo.SecWebSocketProtocol">
+            <summary>
+            SecWebSocketProtocol
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.HandShakeInfo.Origin">
+            <summary>
+            源站資訊
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.HandShakeInfo.Host">
+            <summary>
+            連線使用線路
+            </summary>
+        </member>
+        <member name="T:WebSocketUtils.Model.IWebSocketRule`1">
+            <summary>
+            WS工具規則-抽象類別
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.IWebSocketRule`1.CLOSE_SOCKET_TIMEOUT_MS">
+            <summary>
+            關閉逾時時間
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.IWebSocketRule`1.KeepAliveTime">
+            <summary>
+            KeepAlive時間(秒)
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.IWebSocketRule`1.DefaultByteLength">
+            <summary>
+            預設獲取信息長度
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.#ctor(System.Int32,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            建構子
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.IWebSocketRule`1.IsZlib">
+            <summary>
+            是否壓縮
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.IWebSocketRule`1.MaxmumUsers">
+            <summary>
+            會員連線上限
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.IWebSocketRule`1.RemoteEndPoint">
+            <summary>
+            ws 監聽節點
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.IWebSocketRule`1.UserCollectorNumber">
+            <summary>
+            連線搜集器數量
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.CreateInfo(System.String)">
+            <summary>
+            返回一個新產生的使用者資訊，要返回哪個基於BaseInfo的子類別，由實做的那方決定
+            </summary>
+            <param name="id">被連入的Socket實體</param>
+            <returns>BaseInfo的子類別</returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.Error(System.Exception)">
+            <summary>
+            log error
+            </summary>
+            <param name="ex">錯誤訊息</param>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.Info(System.String)">
+            <summary>
+            log info
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.OnAccept(`0)">
+            <summary>
+            定義被連入的處理
+            </summary>
+            <param name="userInfo">新連入的用戶</param>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.OnClientClose(`0)">
+            <summary>
+            定義關閉Client連線後的處理
+            </summary>
+            <param name="userInfo">要關閉的用戶資訊</param>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.OnMessage(`0,System.String)">
+            <summary>
+            定義收到訊息內容處理
+            </summary>
+            <param name="userInfo">發訊息的用戶</param>
+            <param name="msg">收的訊息內容</param>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.OnRecordSend(`0,System.String)">
+            <summary>
+            定義如何記錄發送訊息
+            </summary>
+            <param name="userInfo"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.Trace(System.String)">
+            <summary>
+            log trace
+            </summary>
+            <param name="msg">提示訊息</param>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.ValidHandShakeHeader(WebSocketUtils.Model.HandShakeInfo,`0)">
+            <summary>
+            定義Client送來握手資訊的驗證處理
+            </summary>
+            <param name="handShakeInfo">握手資訊</param>
+            <param name="userInfo">連入者資訊</param>
+            <returns>是否握手驗證成功</returns>
+            
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.Warring(System.String)">
+            <summary>
+            log warring
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="T:WebSocketUtils.Model.IWebSocketServer`1">
+            <summary>
+            ws server interface
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.IWebSocketServer`1.ServerStatus">
+            <summary>
+            ws 狀態
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketServer`1.GetUser(System.Func{`0,System.Boolean})">
+            <summary>
+            查找會員
+            </summary>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketServer`1.RemoveUser(`0)">
+            <summary>
+            移除會員
+            </summary>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketServer`1.Start">
+            <summary>
+            上班
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.IWebSocketServer`1.Stop">
+            <summary>
+            下班
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebSocketUtils.Model.TDoubleBuf`1">
+            <summary>
+            為了執行續安全使用的DoubleQueue 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:WebSocketUtils.Model.TDoubleBuf`1.mBuf1">
+            <summary>
+            Queue1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:WebSocketUtils.Model.TDoubleBuf`1.mBuf2">
+            <summary>
+            Queue2
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:WebSocketUtils.Model.TDoubleBuf`1.mLockMain">
+            <summary>
+            MainQueue Lock
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:WebSocketUtils.Model.TDoubleBuf`1.mLockBranch">
+            <summary>
+            BranchQueue Lock 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:WebSocketUtils.Model.TDoubleBuf`1.mPositive">
+            <summary>
+            用來判斷當前使用的Queue的Tag
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.TDoubleBuf`1.#ctor">
+            <summary>
+            雙Buffer建構子
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.TDoubleBuf`1.Switch">
+            <summary>
+            切換 Queue
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.TDoubleBuf`1.GetMainLock">
+            <summary>
+            取得 MainQueue 的 Lock
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.TDoubleBuf`1.GetBranchLock">
+            <summary>
+            取得 BranchQueue 的 Lock
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.TDoubleBuf`1.GetMainBuf">
+            <summary>
+            取得 MainQueue 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.TDoubleBuf`1.GetBranchBuf">
+            <summary>
+            取得 BranchQueue 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.TDoubleBuf`1.BranchBufAddValue(`0)">
+            <summary>
+            BranchBuf 新增一筆資料
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.TDoubleBuf`1.ClearMainBuf">
+            <summary>
+            清除MainQueue的資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebSocketUtils.Model.UserInfo">
+            <summary>
+            連線者資訊
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.UserInfo.isSending">
+            <summary>
+            是否正在送訊息
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.UserInfo.willSendQueue">
+            <summary>
+            等待發送的指令(佇列)
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.UserInfo.socketLoopTokenSource">
+            <summary>
+            CancellationToken
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.QueueCount">
+            <summary>
+            佇列數量
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfo.#ctor(System.String)">
+            <summary>
+            建構子
+            </summary>
+            <param name="userId"></param>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.NeedSendData">
+            <summary>
+            需要發送資訊
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.IsZlib">
+            <summary>
+            資料是否壓縮
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.IsHandShakeOver">
+            <summary>
+            是否握手成功
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.LastTimeActive">
+            <summary>
+            最後活動時間
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.WebSocket">
+            <summary>
+            客戶端的WebSocket
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.HttpListenerContext">
+            <summary>
+            HttpListenerContext
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.WebSocketContext">
+            <summary>
+            WebSocketContext 
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.UserID">
+            <summary>
+            連線IP+Port號，是唯一值
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.WSProtocol">
+            <summary>
+            返回給WS的握手附加資訊
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.ReceiveMessageTask">
+            <summary>
+            ReceiveMessageTask
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfo.GetSendAuth">
+            <summary>
+            取得發送權力
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfo.TryDequeueData(System.String@,System.Byte[]@)">
+            <summary>
+            嘗試取出資料
+            </summary>
+            <param name="data"></param>
+            <param name="dataBytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfo.DataEnqueue(System.String)">
+            <summary>
+            資料待排
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfo.DataEnqueue(System.String,System.Byte[])">
+            <summary>
+            資料待排
+            </summary>
+            <param name="data"></param>
+            <param name="dataBytes"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfo.RestoreSendAuth">
+            <summary>
+            歸還發送權力
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfo.Dispose">
+            <summary>
+            釋放資源
+            </summary>
+        </member>
+        <member name="T:WebSocketUtils.Model.UserInfo.MessageConstruct">
+            <summary>
+            發生訊息裝載物件
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.MessageConstruct.Data">
+            <summary>
+            傳輸訊息
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.UserInfo.MessageConstruct.DataBytes">
+            <summary>
+            傳輸訊息-2進制
+            </summary>
+        </member>
+        <member name="T:WebSocketUtils.Model.UserInfoCollector`1">
+            <summary>
+            連線者搜集器
+            </summary>
+        </member>
+        <member name="T:WebSocketUtils.Model.UserInfoCollector`1.DataReceiveHandler">
+            <summary>
+            資料處理Handler
+            </summary>
+            <param name="data"></param>
+            <param name="userInfo"></param>
+        </member>
+        <member name="E:WebSocketUtils.Model.UserInfoCollector`1.OnMessage">
+            <summary>
+            收到資料的事件
+            </summary>
+        </member>
+        <member name="T:WebSocketUtils.Model.UserInfoCollector`1.ErrorHandler">
+            <summary>
+            錯誤處理Handler
+            </summary>
+            <param name="exception"></param>
+            <param name="userInfo"></param>
+        </member>
+        <member name="E:WebSocketUtils.Model.UserInfoCollector`1.OnError">
+            <summary>
+            錯誤處理事件
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.UserInfoCollector`1._userInfos">
+            <summary>
+            連線者集合
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.UserInfoCollector`1.messageObserverTr">
+            <summary>
+            訊息觀察者計時器
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.UserInfoCollector`1.wsRule">
+            <summary>
+            ws rule
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.#ctor(WebSocketUtils.Model.IWebSocketRule{`0})">
+            <summary>
+            建構子
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.GetUser(System.Func{`0,System.Boolean})">
+            <summary>
+            查找會員
+            </summary>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.Start">
+            <summary>
+            上班
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.Stop">
+            <summary>
+            下班
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.TryAddUser(System.Net.HttpListenerContext,System.String)">
+            <summary>
+            加入會員
+            </summary>
+            <param name="httpListenerContext"></param>
+            <param name="endPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.TryRemoveUser(`0)">
+            <summary>
+            移除連線對象
+            </summary>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.MessageObserver">
+            <summary>
+            訊息觀察者
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.ReceiveMessage(System.Object)">
+            <summary>
+            處理接收會員訊息
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.OnMessageHandler(System.Byte[],`0)">
+            <summary>
+            訊息處理Handler
+            </summary>
+            <param name="data"></param>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.OnErrorHandler(System.Exception,`0)">
+            <summary>
+            錯誤處理
+            </summary>
+            <param name="exception"></param>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.ValidRequestHeader(`0)">
+            <summary>
+            驗證表頭
+            </summary>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.UserInfoCollector`1.HeadersToString(`0)">
+            <summary>
+            組裝表頭
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebSocketUtils.Model.WebsocketEncodeHelper">
+            <summary>
+            訊息編碼小幫手
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebsocketEncodeHelper.WebsocketEncodeByZlib(System.String)">
+            <summary>
+            ZLIB 壓縮
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebsocketEncodeHelper.WebsocketEncode(System.String)">
+            <summary>
+            一般壓縮
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebSocketUtils.Model.WebSocketServer`1">
+            <summary>
+            ws server implement
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.WebSocketServer`1.httpListenerContexts">
+            <summary>
+            Client連線Context
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.WebSocketServer`1.listenerLoopTokenSource">
+            <summary>
+            CancellationTokenSource
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.WebSocketServer`1.httpListener">
+            <summary>
+            HttpListener 本體
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.WebSocketServer`1.userCollector">
+            <summary>
+            會員搜集器群組
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.WebSocketServer`1.wsRule">
+            <summary>
+            ws rule
+            </summary>
+        </member>
+        <member name="F:WebSocketUtils.Model.WebSocketServer`1.contextProcessTimer">
+            <summary>
+            訊息觀察者計時器
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebSocketServer`1.#ctor(WebSocketUtils.Model.IWebSocketRule{`0})">
+            <summary>
+            建構子
+            </summary>
+            <param name="wsRule"></param>
+        </member>
+        <member name="P:WebSocketUtils.Model.WebSocketServer`1.UserCollectorInfo">
+            <summary>
+            會員搜集器資訊
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.WebSocketServer`1.ServerStatus">
+            <summary>
+            ws 狀態
+            </summary>
+        </member>
+        <member name="P:WebSocketUtils.Model.WebSocketServer`1.isWork">
+            <summary>
+            是否在工作
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebSocketServer`1.GetUser(System.Func{`0,System.Boolean})">
+            <summary>
+            查找會員
+            </summary>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebSocketServer`1.RemoveUser(`0)">
+            <summary>
+            移除會員
+            </summary>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebSocketServer`1.Start">
+            <summary>
+            上班
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebSocketServer`1.Stop">
+            <summary>
+            下班
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebSocketServer`1.ContextProcessHandler">
+            <summary>
+            AcceptWebSocket處理
+            </summary>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebSocketServer`1.CallbackWebSocket(System.IAsyncResult)">
+            <summary>
+            處理WebSocket連入要求
+            </summary>
+            <param name="ar"></param>
+        </member>
+        <member name="M:WebSocketUtils.Model.WebSocketServer`1.TryAddUser(System.Net.HttpListenerContext,System.String)">
+            <summary>
+            建立使用者
+            </summary>
+            <param name="httpListenerContext"></param>
+            <param name="endPoint"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

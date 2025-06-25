@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Live.Libs.Persistent</name>
+    </assembly>
+    <members>
+        <member name="T:Live.Libs.Persistent.ISerialNumberRepository">
+            <summary>
+            取流水號
+            </summary>
+        </member>
+        <member name="M:Live.Libs.Persistent.ISerialNumberRepository.GetSerialNumber(System.Int64)">
+            <summary>
+            取唯一流水號
+            </summary>
+            <param name="qty">流水號數量</param>
+            <returns></returns>
+        </member>
+        <member name="T:Live.Libs.Persistent.SerialNumberRepository">
+            <summary>
+            取流水號實例
+            </summary>
+        </member>
+        <member name="F:Live.Libs.Persistent.SerialNumberRepository.conn">
+            <summary>
+            Redis 連線物件
+            </summary>
+        </member>
+        <member name="M:Live.Libs.Persistent.SerialNumberRepository.#ctor(StackExchange.Redis.ConnectionMultiplexer)">
+            <summary>
+            建構子
+            </summary>
+            <param name="conn"></param>
+        </member>
+        <member name="M:Live.Libs.Persistent.SerialNumberRepository.GetSerialNumber(System.Int64)">
+            <summary>
+            取唯一流水號
+            </summary>
+            <param name="qty"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
