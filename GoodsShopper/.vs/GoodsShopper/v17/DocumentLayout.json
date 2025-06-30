@@ -1,12 +1,107 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TrainProjectPack\\GoodsShopper\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\TrainProject\\GoodsShopper\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|GoodsShopper.Domain\\GoodsShopper.Domain.csproj|d:\\trainproject\\goodsshopper\\goodsshopper.domain\\dto\\character\\characterquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|GoodsShopper.Domain\\GoodsShopper.Domain.csproj|solutionrelative:goodsshopper.domain\\dto\\character\\characterquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|GoodsShopper.Domain\\GoodsShopper.Domain.csproj|d:\\trainproject\\goodsshopper\\goodsshopper.domain\\dto\\brand\\brandquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|GoodsShopper.Domain\\GoodsShopper.Domain.csproj|solutionrelative:goodsshopper.domain\\dto\\brand\\brandquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|GoodsShopper.Domain\\GoodsShopper.Domain.csproj|d:\\trainproject\\goodsshopper\\goodsshopper.domain\\dto\\character\\characterinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|GoodsShopper.Domain\\GoodsShopper.Domain.csproj|solutionrelative:goodsshopper.domain\\dto\\character\\characterinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|GoodsShopper.Domain\\GoodsShopper.Domain.csproj|d:\\trainproject\\goodsshopper\\goodsshopper.domain\\dto\\brand\\brandinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|GoodsShopper.Domain\\GoodsShopper.Domain.csproj|solutionrelative:goodsshopper.domain\\dto\\brand\\brandinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1B80BB9-C76A-41FA-B939-06F57FB1A38B}|GoodsShopper.Ap\\GoodsShopper.Ap.csproj|d:\\trainproject\\goodsshopper\\goodsshopper.ap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1B80BB9-C76A-41FA-B939-06F57FB1A38B}|GoodsShopper.Ap\\GoodsShopper.Ap.csproj|solutionrelative:goodsshopper.ap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BrandQueryDto.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Domain\\DTO\\Brand\\BrandQueryDto.cs",
+              "RelativeDocumentMoniker": "GoodsShopper.Domain\\DTO\\Brand\\BrandQueryDto.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Domain\\DTO\\Brand\\BrandQueryDto.cs",
+              "RelativeToolTip": "GoodsShopper.Domain\\DTO\\Brand\\BrandQueryDto.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwC4AAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T06:26:52.894Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BrandInsertDto.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Domain\\DTO\\Brand\\BrandInsertDto.cs",
+              "RelativeDocumentMoniker": "GoodsShopper.Domain\\DTO\\Brand\\BrandInsertDto.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Domain\\DTO\\Brand\\BrandInsertDto.cs",
+              "RelativeToolTip": "GoodsShopper.Domain\\DTO\\Brand\\BrandInsertDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T05:21:51.606Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CharacterQueryDto.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Domain\\DTO\\Character\\CharacterQueryDto.cs",
+              "RelativeDocumentMoniker": "GoodsShopper.Domain\\DTO\\Character\\CharacterQueryDto.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Domain\\DTO\\Character\\CharacterQueryDto.cs",
+              "RelativeToolTip": "GoodsShopper.Domain\\DTO\\Character\\CharacterQueryDto.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA0wC0AAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T08:30:14.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CharacterInsertDto.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Domain\\DTO\\Character\\CharacterInsertDto.cs",
+              "RelativeDocumentMoniker": "GoodsShopper.Domain\\DTO\\Character\\CharacterInsertDto.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Domain\\DTO\\Character\\CharacterInsertDto.cs",
+              "RelativeToolTip": "GoodsShopper.Domain\\DTO\\Character\\CharacterInsertDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T08:19:27.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Ap\\Program.cs",
+              "RelativeDocumentMoniker": "GoodsShopper.Ap\\Program.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Ap\\Program.cs",
+              "RelativeToolTip": "GoodsShopper.Ap\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T09:45:09.405Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

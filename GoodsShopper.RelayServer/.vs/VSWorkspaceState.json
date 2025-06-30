@@ -5,8 +5,9 @@
     "\\GoodsShopper.RelayServer.Domain",
     "\\GoodsShopper.RelayServer.Domain\\ClientAction",
     "\\GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer",
-    "\\GoodsShopper.RelayServer\\Applibs"
+    "\\GoodsShopper.RelayServer\\Applibs",
+    "\\GoodsShopper.RelayServer\\WebSocket"
   ],
-  "SelectedNode": "\\GoodsShopper.RelayServer.sln",
+  "SelectedNode": "\\GoodsShopper.RelayServer.Domain",
   "PreviewInSolutionExplorer": false
 }

@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TrainProjectPack\\GoodsShopper.RelayServer\\",
+  "WorkspaceRootPath": "D:\\TrainProject\\GoodsShopper.RelayServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\WebSocket\\WebSocketRule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:GoodsShopper.RelayServer\\WebSocket\\WebSocketRule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\websocket\\websocketrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\websocket\\websocketrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\command\\getbrandcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\command\\getbrandcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|d:\\trainprojectpack\\goodsshopper.relayserver\\goodsshopper.relayserver.domain\\clientaction\\torelayserver\\action_brand_in_getbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|solutionrelative:goodsshopper.relayserver.domain\\clientaction\\torelayserver\\action_brand_in_getbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer\\Action_Brand_in_getBrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|solutionrelative:GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer\\Action_Brand_in_getBrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetBrandCommand.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Command\\GetBrandCommand.cs",
+              "RelativeDocumentMoniker": "GoodsShopper.RelayServer\\Command\\GetBrandCommand.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Command\\GetBrandCommand.cs",
+              "RelativeToolTip": "GoodsShopper.RelayServer\\Command\\GetBrandCommand.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T09:00:25.066Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Action_Brand_in_getBrand.cs",
-              "DocumentMoniker": "D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer\\Action_Brand_in_getBrand.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer\\Action_Brand_in_getBrand.cs",
               "RelativeDocumentMoniker": "GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer\\Action_Brand_in_getBrand.cs",
-              "ToolTip": "D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer\\Action_Brand_in_getBrand.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer\\Action_Brand_in_getBrand.cs",
               "RelativeToolTip": "GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer\\Action_Brand_in_getBrand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T06:24:23.581Z",
               "EditorCaption": ""
@@ -45,24 +62,24 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AutofacConfig.cs",
-              "DocumentMoniker": "D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs",
               "RelativeDocumentMoniker": "GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs",
-              "ToolTip": "D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs",
               "RelativeToolTip": "GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAIwEMAAABLAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvyYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T06:23:41.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ConfigHelper.cs",
-              "DocumentMoniker": "D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs",
               "RelativeDocumentMoniker": "GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs",
-              "ToolTip": "D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs",
               "RelativeToolTip": "GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAIwFUAAABIAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAIwFEAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T06:23:24.611Z",
               "EditorCaption": ""
@@ -71,11 +88,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "WebSocketRule.cs",
-              "DocumentMoniker": "D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\WebSocket\\WebSocketRule.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\WebSocket\\WebSocketRule.cs",
               "RelativeDocumentMoniker": "GoodsShopper.RelayServer\\WebSocket\\WebSocketRule.cs",
-              "ToolTip": "D:\\TrainProjectPack\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\WebSocket\\WebSocketRule.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\WebSocket\\WebSocketRule.cs",
               "RelativeToolTip": "GoodsShopper.RelayServer\\WebSocket\\WebSocketRule.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAQwGoAAAAUAAAA",
+              "ViewState": "AQIAAEEAAABAmJmZmZkJwHYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T06:22:13.012Z",
               "EditorCaption": ""

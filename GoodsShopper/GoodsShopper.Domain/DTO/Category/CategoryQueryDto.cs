@@ -13,7 +13,7 @@ namespace GoodsShopper.Domain.DTO
         /// <summary>
         /// 名稱
         /// </summary>
-        public int Id { get; set; }
+        public int ProductTypeId { get; set; }
     }
 
     /// <summary>

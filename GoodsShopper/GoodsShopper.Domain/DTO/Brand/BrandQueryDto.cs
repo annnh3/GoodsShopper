@@ -11,7 +11,7 @@ namespace GoodsShopper.Domain.DTO
     public class BrandQueryDto
     {
         /// <summary>
-        /// 名稱
+        /// 索引ID
         /// </summary>
         public int Id { get; set; }
     }

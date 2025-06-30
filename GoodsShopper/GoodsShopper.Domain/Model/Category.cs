@@ -9,8 +9,11 @@ namespace GoodsShopper.Domain.Model
     {
         [ProtoMember(1)]
         public int Id { get; set; }
-
+        
         [ProtoMember(2)]
+        public int ProductTypeId { get; set; }
+
+        [ProtoMember(3)]
         public string Name { get; set; }
 
         /// <summary>

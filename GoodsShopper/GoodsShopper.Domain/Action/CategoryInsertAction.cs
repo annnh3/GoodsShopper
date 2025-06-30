@@ -8,6 +8,11 @@ namespace GoodsShopper.Domain.Action
     public class CategoryInsertAction : ActionBase
     {
         /// <summary>
+        /// 商品種類ID
+        /// </summary>
+        public int ProductTypeId { get; set; }
+        
+        /// <summary>
         /// 分類名稱
         /// </summary>
         public string Name { get; set; }

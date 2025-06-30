@@ -68,8 +68,8 @@ namespace GoodsShopper.Domain.Service
             {
                 var getRoute = string.Format("{0}/Query?{1}={2}",
                     this.route,
-                    nameof(BrandQueryDto.Id),
-                    request.Id);
+                    nameof(CategoryQueryDto.ProductTypeId),
+                    request.ProductTypeId);
 
                 var httpWebRequest = (HttpWebRequest)WebRequest.Create(getRoute);
                 httpWebRequest.ContentType = this.contentType;

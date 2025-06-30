@@ -28,6 +28,7 @@ namespace GoodsShopper.Ap.ActionHandler
 
                 var result = this.categoryInfoSvc.Insert(new Domain.DTO.CategoryInsertDto
                 {
+                    ProductTypeId = content.ProductTypeId,
                     Name = content.Name,
                 });
 

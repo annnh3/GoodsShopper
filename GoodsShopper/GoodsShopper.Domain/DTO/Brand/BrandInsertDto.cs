@@ -8,7 +8,7 @@ namespace GoodsShopper.Domain.DTO
     public class BrandInsertDto
     {
         /// <summary>
-        /// 品牌Id
+        /// 品牌名稱
         /// </summary>
         public string Name { get; set; }
 

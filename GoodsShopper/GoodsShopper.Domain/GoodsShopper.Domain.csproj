@@ -63,9 +63,23 @@
     <Compile Include="DTO\Category\CategoryQueryDto.cs" />
     <Compile Include="DTO\Category\CategoryInsertDto.cs" />
     <Compile Include="DTO\Brand\BrandInsertDto.cs" />
+    <Compile Include="DTO\Channel\ChannelInsertDto.cs" />
+    <Compile Include="DTO\Channel\ChannelQueryDto.cs" />
+    <Compile Include="DTO\Character\CharacterInsertDto.cs" />
+    <Compile Include="DTO\Character\CharacterQueryDto.cs" />
+    <Compile Include="DTO\ProductType\ProductTypeInsertDto.cs" />
+    <Compile Include="DTO\ProductType\ProductTypeQueryDto.cs" />
     <Compile Include="DTO\Product\ProductInsertDto.cs" />
     <Compile Include="DTO\Brand\BrandQueryDto.cs" />
     <Compile Include="DTO\Product\ProductQueryDto.cs" />
+    <Compile Include="DTO\SellerType\SellerTypeInsertDto.cs" />
+    <Compile Include="DTO\SellerType\SellerTypeQueryDto.cs" />
+    <Compile Include="DTO\Style\StyleInsertDto.cs" />
+    <Compile Include="DTO\Style\StyleQueryDto.cs" />
+    <Compile Include="DTO\Transportation\TransportationInsertDto.cs" />
+    <Compile Include="DTO\Transportation\TransportationQueryDto.cs" />
+    <Compile Include="DTO\Work\WorkInsertDto.cs" />
+    <Compile Include="DTO\Work\WorkQueryDto.cs" />
     <Compile Include="Model\Brand.cs" />
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\Channel.cs" />
@@ -81,7 +95,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IBrandRepository.cs" />
     <Compile Include="Repository\ICategoryRepository.cs" />
+    <Compile Include="Repository\IChannelRepository.cs" />
+    <Compile Include="Repository\ICharacterRepository.cs" />
+    <Compile Include="Repository\ICollectionRepository.cs" />
     <Compile Include="Repository\IProductRepository.cs" />
+    <Compile Include="Repository\IProductTypeRepository.cs" />
+    <Compile Include="Repository\ISellerRepository.cs" />
+    <Compile Include="Repository\ISellerTypeRepository.cs" />
+    <Compile Include="Repository\IStyleRepository.cs" />
+    <Compile Include="Repository\ITransportationRepository.cs" />
+    <Compile Include="Repository\IWorkRepository.cs" />
     <Compile Include="Service\BrandService.cs" />
     <Compile Include="Service\IBrandService.cs" />
     <Compile Include="Service\CategoryService.cs" />
@@ -99,5 +122,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

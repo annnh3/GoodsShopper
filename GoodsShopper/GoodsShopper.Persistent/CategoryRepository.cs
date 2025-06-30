@@ -41,11 +41,11 @@ namespace GoodsShopper.Persistent
             }
         }
 
-        public (Exception ex, Category category) Query(int id)
+        public (Exception ex, Category category) Query(int productTypeId)
         {
             try
             {
-                return (null, categories.Where(x => x.Id == id).SingleOrDefault());
+                return (null, categories.Where(x => x.Id == productTypeId).SingleOrDefault());
             }
             catch (Exception ex)
             {

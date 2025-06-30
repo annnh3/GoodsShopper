@@ -30,6 +30,7 @@ namespace GoodsShopper.Ap.Model.Service
             {
                 var result = this.categoryRepository.Insert(new Category
                 {
+                    ProductTypeId = request.ProductTypeId,
                     Name = request.Name
                 });
 
@@ -45,7 +46,7 @@ namespace GoodsShopper.Ap.Model.Service
         {
             try 
             {
-                var result = this.categoryRepository.Query(request.Id);
+                var result = this.categoryRepository.Query(request.ProductTypeId);
 
                 return (null, new CategoryQueryResponseDto
                 {

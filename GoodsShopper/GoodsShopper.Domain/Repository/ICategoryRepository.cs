@@ -9,7 +9,7 @@ namespace GoodsShopper.Domain.Repository
     {
         (Exception exception, Category category) Insert(Category category);
 
-        (Exception ex, Category category) Query(int id);
+        (Exception ex, Category category) Query(int productTypeId);
 
         (Exception ex, IEnumerable<Category> categories) GetAll();
     }
