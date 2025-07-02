@@ -1,8 +1,9 @@
-﻿using ProtoBuf;
+﻿using GoodsShopper.Domain.Model;
+using ProtoBuf;
 using System.Collections.Generic;
 using System.IO;
 
-namespace GoodsShopper.Domain.DTO.Character
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 角色查詢DTO
@@ -22,7 +23,7 @@ namespace GoodsShopper.Domain.DTO.Character
     public class CharacterQueryResponseDto
     {
         [ProtoMember(1)]
-        public IEnumerable<Model.Character> Characters { get; set; }
+        public IEnumerable<Character> Characters { get; set; }
 
         /// <summary>
         /// 強行別轉Protobuf格式

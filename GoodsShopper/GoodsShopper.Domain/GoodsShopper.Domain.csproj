@@ -60,6 +60,9 @@
     <Compile Include="Action\GetProductAction.cs" />
     <Compile Include="Action\ProductQueryAction.cs" />
     <Compile Include="Action\ProductInsertAction.cs" />
+    <Compile Include="Action\ProductTypeAction.cs" />
+    <Compile Include="Action\ProductTypeInsertAction.cs" />
+    <Compile Include="Action\ProductTypeQueryAction.cs" />
     <Compile Include="DTO\Category\CategoryQueryDto.cs" />
     <Compile Include="DTO\Category\CategoryInsertDto.cs" />
     <Compile Include="DTO\Brand\BrandInsertDto.cs" />
@@ -109,8 +112,10 @@
     <Compile Include="Service\IBrandService.cs" />
     <Compile Include="Service\CategoryService.cs" />
     <Compile Include="Service\ICategoryService.cs" />
+    <Compile Include="Service\IProductTypeService.cs" />
     <Compile Include="Service\ProductService.cs" />
     <Compile Include="Service\IProductService.cs" />
+    <Compile Include="Service\ProductTypeService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Libs\Live.Libs\Live.Libs.csproj">

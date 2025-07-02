@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace GoodsShopper.Domain.DTO.Channel
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 購買通路新增DTO

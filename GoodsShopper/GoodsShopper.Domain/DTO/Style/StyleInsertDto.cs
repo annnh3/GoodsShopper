@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace GoodsShopper.Domain.DTO.Style
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 外觀新增DTO

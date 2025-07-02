@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace GoodsShopper.Domain.DTO.Character
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 角色新增DTO

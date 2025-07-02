@@ -1,8 +1,9 @@
-﻿using ProtoBuf;
+﻿using GoodsShopper.Domain.Model;
+using ProtoBuf;
 using System.Collections.Generic;
 using System.IO;
 
-namespace GoodsShopper.Domain.DTO.Channel
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 購買通路查詢DTO
@@ -22,7 +23,7 @@ namespace GoodsShopper.Domain.DTO.Channel
     public class ChannelQueryResponseDto
     {
         [ProtoMember(1)]
-        public IEnumerable<Model.Channel> Channels { get; set; }
+        public IEnumerable<Channel> Channels { get; set; }
 
         /// <summary>
         /// 強行別轉Protobuf格式

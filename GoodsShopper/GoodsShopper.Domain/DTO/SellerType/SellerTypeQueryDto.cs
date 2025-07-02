@@ -1,8 +1,9 @@
-﻿using ProtoBuf;
+﻿using GoodsShopper.Domain.Model;
+using ProtoBuf;
 using System.Collections.Generic;
 using System.IO;
 
-namespace GoodsShopper.Domain.DTO.SellerType
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 賣家型態查詢DTO
@@ -22,7 +23,7 @@ namespace GoodsShopper.Domain.DTO.SellerType
     public class SellerTypeQueryResponseDto
     {
         [ProtoMember(1)]
-        public IEnumerable<Model.SellerType> SellerTypes { get; set; }
+        public IEnumerable<SellerType> SellerTypes { get; set; }
 
         /// <summary>
         /// 強行別轉Protobuf格式

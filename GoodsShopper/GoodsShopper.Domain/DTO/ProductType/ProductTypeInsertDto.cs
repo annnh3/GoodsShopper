@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace GoodsShopper.Domain.DTO.ProductType
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 商品種類新增DTO

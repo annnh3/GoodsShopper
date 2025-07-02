@@ -3,11 +3,12 @@
     "",
     "\\GoodsShopper.RelayServer",
     "\\GoodsShopper.RelayServer.Domain",
+    "\\GoodsShopper.RelayServer.Domain\\Cache",
     "\\GoodsShopper.RelayServer.Domain\\ClientAction",
     "\\GoodsShopper.RelayServer.Domain\\ClientAction\\ToRelayServer",
     "\\GoodsShopper.RelayServer\\Applibs",
     "\\GoodsShopper.RelayServer\\WebSocket"
   ],
-  "SelectedNode": "\\GoodsShopper.RelayServer.Domain",
+  "SelectedNode": "\\GoodsShopper.RelayServer.sln",
   "PreviewInSolutionExplorer": false
 }

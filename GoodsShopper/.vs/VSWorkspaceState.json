@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GoodsShopper.Domain",
+    "\\GoodsShopper.Domain\\DTO",
+    "\\GoodsShopper.Domain\\DTO\\Character"
   ],
-  "SelectedNode": "\\GoodsShopper.Tests",
+  "SelectedNode": "\\GoodsShopper.sln",
   "PreviewInSolutionExplorer": false
 }

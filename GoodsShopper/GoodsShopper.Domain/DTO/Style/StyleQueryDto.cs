@@ -1,8 +1,9 @@
-﻿using ProtoBuf;
+﻿using GoodsShopper.Domain.Model;
+using ProtoBuf;
 using System.Collections.Generic;
 using System.IO;
 
-namespace GoodsShopper.Domain.DTO.Style
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 外觀查詢DTO
@@ -22,7 +23,7 @@ namespace GoodsShopper.Domain.DTO.Style
     public class StyleQueryResponseDto
     {
         [ProtoMember(1)]
-        public IEnumerable<Model.Style> Styles { get; set; }
+        public IEnumerable<Style> Styles { get; set; }
 
         /// <summary>
         /// 強行別轉Protobuf格式

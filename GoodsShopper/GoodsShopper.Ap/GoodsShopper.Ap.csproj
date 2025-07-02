@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -150,6 +165,7 @@
     <Reference Include="System.Web.Cors, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Cors.5.0.0\lib\net45\System.Web.Cors.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
@@ -170,9 +186,12 @@
     <Compile Include="ActionHandler\GetBrandActionHandler.cs" />
     <Compile Include="ActionHandler\GetProductActionHandler.cs" />
     <Compile Include="ActionHandler\BrandInsertActionHandler.cs" />
+    <Compile Include="ActionHandler\GetProductTypeActionHandler.cs" />
     <Compile Include="ActionHandler\ProductInsertActionHandler.cs" />
     <Compile Include="ActionHandler\BrandQueryActionHandler.cs" />
     <Compile Include="ActionHandler\ProductQueryActionHandler.cs" />
+    <Compile Include="ActionHandler\ProductTypeInsertActionHandler.cs" />
+    <Compile Include="ActionHandler\ProductTypeQueryActionHandler.cs" />
     <Compile Include="Applibs\AutofacConfig.cs" />
     <Compile Include="Applibs\KeepAliveProcedure.cs" />
     <Compile Include="Applibs\ConfigHelper.cs" />
@@ -182,6 +201,7 @@
     <Compile Include="Controllers\BrandController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ProductTypeController.cs" />
     <Compile Include="Hubs\GoodsShopperHub.cs" />
     <Compile Include="Hubs\HubClient.cs" />
     <Compile Include="Hubs\IHubClient.cs" />
@@ -189,8 +209,10 @@
     <Compile Include="Model\Service\ICategoryInfoService.cs" />
     <Compile Include="Model\Service\IBrandInfoService.cs" />
     <Compile Include="Model\Service\BrandInfoService.cs" />
+    <Compile Include="Model\Service\IProductTypeInfoService.cs" />
     <Compile Include="Model\Service\ProductInfoService.cs" />
     <Compile Include="Model\Service\IProductInfoService.cs" />
+    <Compile Include="Model\Service\ProductTypeInfoService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -202,7 +224,18 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Libs\Live.Libs.Persistent\Live.Libs.Persistent.csproj">
       <Project>{a7c55d26-3202-4bc2-96bd-e6bc2c80a21c}</Project>

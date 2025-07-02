@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace GoodsShopper.Domain.DTO.Transportation
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 運輸方式新增DTO

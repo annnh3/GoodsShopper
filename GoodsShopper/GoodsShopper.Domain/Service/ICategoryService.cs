@@ -11,7 +11,7 @@ namespace GoodsShopper.Domain.Service
         /// </summary>
         /// <param name="category"></param>
         /// <returns></returns>
-        (Exception exception, Category category) Insert(CategoryInsertDto brand);
+        (Exception exception, Category category) Insert(CategoryInsertDto category);
 
         /// <summary>
         /// 分類查詢
@@ -23,7 +23,6 @@ namespace GoodsShopper.Domain.Service
         /// <summary>
         /// 分類查詢
         /// </summary>
-        /// <param name="request"></param>
         /// <returns></returns>
         (Exception exception, CategoryQueryResponseDto response) Query();
     }

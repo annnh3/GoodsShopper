@@ -1,8 +1,9 @@
-﻿using ProtoBuf;
+﻿using GoodsShopper.Domain.Model;
+using ProtoBuf;
 using System.Collections.Generic;
 using System.IO;
 
-namespace GoodsShopper.Domain.DTO.ProductType
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 商品種類查詢DTO
@@ -22,7 +23,7 @@ namespace GoodsShopper.Domain.DTO.ProductType
     public class ProductTypeQueryResponseDto
     {
         [ProtoMember(1)]
-        public IEnumerable<Model.ProductType> ProductTypes { get; set; }
+        public IEnumerable<ProductType> ProductTypes { get; set; }
 
         /// <summary>
         /// 強行別轉Protobuf格式

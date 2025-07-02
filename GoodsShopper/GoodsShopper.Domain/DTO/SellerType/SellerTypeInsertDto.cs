@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GoodsShopper.Domain.DTO.SellerType
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 賣家型態新增DTO

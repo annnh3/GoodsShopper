@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace GoodsShopper.Domain.DTO.Work
+namespace GoodsShopper.Domain.DTO
 {
     /// <summary>
     /// 作品新增DTO

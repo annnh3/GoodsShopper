@@ -26,7 +26,7 @@ namespace GoodsShopper.Ap.ActionHandler
 
                 var result = categoryInfoSvc.Query(new Domain.DTO.CategoryQueryDto
                 {
-                    Id = content.Id
+                    ProductTypeId = content.ProductTypeId
                 });
 
                 if (result.exception != null) 
