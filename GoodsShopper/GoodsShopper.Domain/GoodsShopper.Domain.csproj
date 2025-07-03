@@ -50,19 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Action\BrandAction.cs" />
-    <Compile Include="Action\CategoryQueryAction.cs" />
-    <Compile Include="Action\CategoryInsertAction.cs" />
-    <Compile Include="Action\BrandInsertAction.cs" />
-    <Compile Include="Action\CategoryAction.cs" />
-    <Compile Include="Action\ProductAction.cs" />
-    <Compile Include="Action\BrandQueryAction.cs" />
-    <Compile Include="Action\GetProductAction.cs" />
-    <Compile Include="Action\ProductQueryAction.cs" />
-    <Compile Include="Action\ProductInsertAction.cs" />
-    <Compile Include="Action\ProductTypeAction.cs" />
-    <Compile Include="Action\ProductTypeInsertAction.cs" />
-    <Compile Include="Action\ProductTypeQueryAction.cs" />
+    <Compile Include="Action\ToMicroService\ProductTypeClientInsertAction.cs" />
+    <Compile Include="Action\ToRelayService\BrandAction.cs" />
+    <Compile Include="Action\ToMicroService\CategoryQueryAction.cs" />
+    <Compile Include="Action\ToMicroService\CategoryInsertAction.cs" />
+    <Compile Include="Action\ToMicroService\BrandInsertAction.cs" />
+    <Compile Include="Action\ToRelayService\CategoryAction.cs" />
+    <Compile Include="Action\ToRelayService\ProductAction.cs" />
+    <Compile Include="Action\ToMicroService\BrandQueryAction.cs" />
+    <Compile Include="Action\ToMicroService\GetProductAction.cs" />
+    <Compile Include="Action\ToMicroService\ProductQueryAction.cs" />
+    <Compile Include="Action\ToMicroService\ProductInsertAction.cs" />
+    <Compile Include="Action\ToRelayService\ProductTypeAction.cs" />
+    <Compile Include="Action\ToMicroService\ProductTypeQueryAction.cs" />
     <Compile Include="DTO\Category\CategoryQueryDto.cs" />
     <Compile Include="DTO\Category\CategoryInsertDto.cs" />
     <Compile Include="DTO\Brand\BrandInsertDto.cs" />

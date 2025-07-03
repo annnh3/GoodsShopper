@@ -1,5 +1,6 @@
 ﻿using System;
 using GoodsShopper.RelayServer.Domain.Cache.Structure;
+using GoodsShopper.RelayServer.Domain.ClientAction.ToClient;
 using GoodsShopper.RelayServer.Domain.ClientAction.ToRelayServer;
 using GoodsShopper.RelayServer.Model;
 using GoodsShopper.RelayServer.Model.Service;

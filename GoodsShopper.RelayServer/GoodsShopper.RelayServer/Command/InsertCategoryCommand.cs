@@ -1,6 +1,7 @@
 ﻿using System;
 using GoodsShopper.Domain.Service;
 using GoodsShopper.RelayServer.Domain.Cache.Structure;
+using GoodsShopper.RelayServer.Domain.ClientAction.ToClient;
 using GoodsShopper.RelayServer.Domain.ClientAction.ToRelayServer;
 using GoodsShopper.RelayServer.Model;
 using GoodsShopper.RelayServer.Model.Service;
@@ -11,7 +12,7 @@ namespace GoodsShopper.RelayServer.Command
     public class InsertCategoryCommand : ICommand
     {
         /// <summary>
-        /// 禮物選單設定服務
+        /// 新增分類服務
         /// </summary>
         private readonly ICategoryService categorySvc;
 
@@ -34,13 +35,15 @@ namespace GoodsShopper.RelayServer.Command
 
                 var result = categorySvc.Insert(new GoodsShopper.Domain.DTO.CategoryInsertDto
                 {
+                    ProductTypeId = cmd.ProductTypeId,
                     Name = cmd.Name
                 });
 
                 var categoryData = new Category
                 {
-                    Name = result.category.Name,
-                    Id = result.category.Id
+                    Id = result.category.Id,
+                    ProductTypeId = result.category.ProductTypeId,
+                    Name = result.category.Name
                 };
 
                 cacheSvc.Upsert(new[]

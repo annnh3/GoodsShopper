@@ -2,6 +2,7 @@
 using GoodsShopper.Domain.Model;
 using GoodsShopper.Domain.Service;
 using GoodsShopper.RelayServer.Domain.Cache.Structure;
+using GoodsShopper.RelayServer.Domain.ClientAction.ToClient;
 using GoodsShopper.RelayServer.Domain.ClientAction.ToRelayServer;
 using GoodsShopper.RelayServer.Model;
 using GoodsShopper.RelayServer.Model.Service;
@@ -17,7 +18,7 @@ namespace GoodsShopper.RelayServer.Command
         private readonly ICacheService cacheSvc;
 
         /// <summary>
-        /// 禮物設定服務
+        /// 新增品牌服務
         /// </summary>
         private readonly IBrandService brandSvc;
 

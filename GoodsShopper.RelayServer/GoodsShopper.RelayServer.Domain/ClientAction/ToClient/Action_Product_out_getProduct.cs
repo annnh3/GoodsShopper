@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using GoodsShopper.RelayServer.Domain.Cache.Structure;
 
-namespace GoodsShopper.RelayServer.Domain.ClientAction.ToRelayServer
+namespace GoodsShopper.RelayServer.Domain.ClientAction.ToClient
 {
-    public class Action_Product_out_getProduct : IRelayServerAction
+    public class Action_Product_out_getProduct : IClientAction
     {
         /// <summary>
         /// 商品資料

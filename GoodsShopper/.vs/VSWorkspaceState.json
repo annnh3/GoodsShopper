@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\GoodsShopper.Ap",
+    "\\GoodsShopper.Ap\\ActionHandler",
     "\\GoodsShopper.Domain",
     "\\GoodsShopper.Domain\\DTO",
-    "\\GoodsShopper.Domain\\DTO\\Character"
+    "\\GoodsShopper.Domain\\DTO\\Character",
+    "\\GoodsShopper.Domain\\Service"
   ],
   "SelectedNode": "\\GoodsShopper.sln",
   "PreviewInSolutionExplorer": false

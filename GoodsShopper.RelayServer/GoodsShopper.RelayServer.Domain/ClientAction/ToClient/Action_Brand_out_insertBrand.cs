@@ -1,8 +1,7 @@
 ﻿using GoodsShopper.RelayServer.Domain.Cache.Structure;
-using GoodsShopper.RelayServer.Domain.ClientAction.ToClient;
 using Newtonsoft.Json;
 
-namespace GoodsShopper.RelayServer.Domain.ClientAction.ToRelayServer
+namespace GoodsShopper.RelayServer.Domain.ClientAction.ToClient
 {
     public class Action_Brand_out_insertBrand : IClientAction
     {

@@ -190,7 +190,7 @@
     <Compile Include="ActionHandler\ProductInsertActionHandler.cs" />
     <Compile Include="ActionHandler\BrandQueryActionHandler.cs" />
     <Compile Include="ActionHandler\ProductQueryActionHandler.cs" />
-    <Compile Include="ActionHandler\ProductTypeInsertActionHandler.cs" />
+    <Compile Include="ActionHandler\ProductTypeClientInsertActionHandler.cs" />
     <Compile Include="ActionHandler\ProductTypeQueryActionHandler.cs" />
     <Compile Include="Applibs\AutofacConfig.cs" />
     <Compile Include="Applibs\KeepAliveProcedure.cs" />

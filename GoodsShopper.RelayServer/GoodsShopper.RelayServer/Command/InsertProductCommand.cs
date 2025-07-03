@@ -5,13 +5,14 @@ using GoodsShopper.RelayServer.Model.Service;
 using GoodsShopper.RelayServer.Model;
 using Newtonsoft.Json;
 using GoodsShopper.RelayServer.Domain.Cache.Structure;
+using GoodsShopper.RelayServer.Domain.ClientAction.ToClient;
 
 namespace GoodsShopper.RelayServer.Command
 {
     public class InsertProductCommand : ICommand
     {
         /// <summary>
-        /// 禮物設定服務
+        /// 新增商品服務
         /// </summary>
         private readonly IProductService productSvc;
 

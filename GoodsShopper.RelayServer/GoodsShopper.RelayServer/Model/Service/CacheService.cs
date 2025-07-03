@@ -17,17 +17,22 @@ namespace GoodsShopper.RelayServer.Model.Service
         private readonly ILogger logger = LogManager.GetLogger("RelayServer");
 
         /// <summary>
-        /// 禮物設定服務
+        /// 商品服務
         /// </summary>
         private readonly IProductService productSvc;
 
         /// <summary>
-        /// 禮物選單設定服務
+        /// 商品種類服務
+        /// </summary>
+        private readonly IProductTypeService productTypeSvc;
+        
+        /// <summary>
+        /// 商品分類服務
         /// </summary>
         private readonly ICategoryService categorySvc;
 
         /// <summary>
-        /// 禮物開關設定服務
+        /// 品牌服務
         /// </summary>
         private readonly IBrandService brandSvc;
 
@@ -39,10 +44,12 @@ namespace GoodsShopper.RelayServer.Model.Service
         public CacheService(
             IIndex<string, ICache> cacheSet,
             IProductService productSvc,
+            IProductTypeService productTypeSvc,
             ICategoryService categorySvc,
             IBrandService brandSvc)
         {
             this.productSvc = productSvc;
+            this.productTypeSvc = productTypeSvc;
             this.categorySvc = categorySvc;
             this.brandSvc = brandSvc;
 
@@ -126,6 +133,24 @@ namespace GoodsShopper.RelayServer.Model.Service
                     CategoryId = x.CategoryId
                 });
                 cache.Initialize(products);
+            }
+            else if (cache.GetType() == typeof(ProductTypeCache))
+            {
+                var getResult = this.productTypeSvc.Query();
+
+                if (getResult.exception != null)
+                {
+                    this.logger.Error(getResult.exception, $"{this.GetType().Name} ProductType Query");
+                    return;
+                }
+
+                this.logger.Trace($"{this.GetType().Name} CacheInitialize ProductType Query:{JsonConvert.SerializeObject(getResult.response.ProductTypes)}");
+                var productTypes = getResult.response.ProductTypes.Select(x => new ProductType
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                });
+                cache.Initialize(productTypes);
             }
             else
             {

@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using GoodsShopper.RelayServer.Domain.Cache.Structure;
-using GoodsShopper.RelayServer.Domain.ClientAction.ToClient;
+﻿using GoodsShopper.RelayServer.Domain.Cache.Structure;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
-namespace GoodsShopper.RelayServer.Domain.ClientAction.ToRelayServer
+namespace GoodsShopper.RelayServer.Domain.ClientAction.ToClient
 {
     public class Action_Brand_out_getBrand : IClientAction
     {
