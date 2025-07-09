@@ -36,27 +36,12 @@ namespace GoodsShopper.RelayServer.Command
             {
                 var cmd = JsonConvert.DeserializeObject<Action_Product_in_insertProduct>(content);
 
-                var actionResult = hubClient.GetAction(new ProductInsertAction
+                hubClient.GetAction(new ProductInsertAction
                 {
                     Name = cmd.Name,
                     BrandId = cmd.BrandId,
                     CategoryId = cmd.CategoryId
-                }).Result;
-
-                //var productData = new ProductInfo
-                //{
-                //    Name = actionResult.Product.Name,
-                //    Id = actionResult.Product.Id,
-                //    BrandId = actionResult.Product.BrandId,
-                //    CategoryId = actionResult.Product.CategoryId
-                //};
-
-                //cacheSvc.Upsert(new[] { productData });
-
-                //user.AddMsgQueueWithDc(new Action_Product_out_insertProduct()
-                //{
-                //    Data = productData
-                //});
+                });
 
                 return true;
             }

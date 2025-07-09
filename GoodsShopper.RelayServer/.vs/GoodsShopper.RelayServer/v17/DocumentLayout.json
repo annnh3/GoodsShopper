@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\TrainProject\\GoodsShopper.RelayServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer.Domain\\Signalr\\GoodsShopperHubClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|solutionrelative:GoodsShopper.RelayServer.Domain\\Signalr\\GoodsShopperHubClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver.domain\\signalr\\goodsshopperhubclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|solutionrelative:goodsshopper.relayserver.domain\\signalr\\goodsshopperhubclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver\\command\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\command\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\ActionHandler\\ProductActionHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -14,23 +18,19 @@
       "AbsoluteMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|..\\GoodsShopper\\GoodsShopper.Domain\\GoodsShopper.Domain.csproj|d:\\trainproject\\goodsshopper\\goodsshopper.domain\\action\\torelayservice\\productaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\command\\getproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver\\command\\getproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\command\\getproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\command\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\command\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Model\\Service\\CacheService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:GoodsShopper.RelayServer\\Model\\Service\\CacheService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\command\\insertproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver\\command\\insertproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\command\\insertproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\command\\insertproducttypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver\\command\\insertproducttypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\command\\insertproducttypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -58,11 +58,11 @@
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\model\\service\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver\\model\\service\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\model\\service\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\actionhandler\\brandactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver\\actionhandler\\brandactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\actionhandler\\brandactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -73,15 +73,15 @@
       "AbsoluteMoniker": "D:0:0:{AE8301BE-5625-4313-9A90-87F8CF43A68E}|..\\GoodsShopper\\GoodsShopper.Domain\\GoodsShopper.Domain.csproj|d:\\trainproject\\goodsshopper\\goodsshopper.domain\\service\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\model\\backendprocedure\\clearexpirecacheprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver\\model\\backendprocedure\\clearexpirecacheprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\model\\backendprocedure\\clearexpirecacheprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver.domain\\cache\\brandcache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver.domain\\cache\\brandcache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F0831F0-22D5-42D9-BAE3-0093F78AC220}|GoodsShopper.RelayServer.Domain\\GoodsShopper.RelayServer.Domain.csproj|solutionrelative:goodsshopper.relayserver.domain\\cache\\brandcache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\model\\backendprocedure\\checkcachetaskprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver\\model\\backendprocedure\\checkcachetaskprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\model\\backendprocedure\\checkcachetaskprocedure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -89,7 +89,7 @@
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:GoodsShopper.RelayServer\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|d:\\trainproject\\goodsshopper.relayserver\\goodsshopper.relayserver\\model\\hubclientnotify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|D:\\TrainProject\\GoodsShopper.RelayServer\\goodsshopper.relayserver\\model\\hubclientnotify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0B847F7-7355-4128-9D64-7EFD9F95B7D1}|GoodsShopper.RelayServer\\GoodsShopper.RelayServer.csproj|solutionrelative:goodsshopper.relayserver\\model\\hubclientnotify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -117,12 +117,11 @@
               "ViewState": "AQIAAFgAAAAAAAAAAAAkwO8AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T02:05:20.82Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GetProductCommand.cs",
               "DocumentMoniker": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Command\\GetProductCommand.cs",
               "RelativeDocumentMoniker": "GoodsShopper.RelayServer\\Command\\GetProductCommand.cs",
@@ -130,8 +129,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Command\\GetProductCommand.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAYwCIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:28:25.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T05:28:25.981Z"
             },
             {
               "$type": "Document",
@@ -143,12 +141,11 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Command\\InsertProductCommand.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAABAwDAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:09:39.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T05:09:39.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductAction.cs",
               "DocumentMoniker": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Domain\\Action\\ToRelayService\\ProductAction.cs",
               "RelativeDocumentMoniker": "..\\GoodsShopper\\GoodsShopper.Domain\\Action\\ToRelayService\\ProductAction.cs",
@@ -156,18 +153,17 @@
               "RelativeToolTip": "..\\GoodsShopper\\GoodsShopper.Domain\\Action\\ToRelayService\\ProductAction.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAswAkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T05:04:55.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T05:04:55.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "TestCommand.cs",
               "DocumentMoniker": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Command\\TestCommand.cs",
               "RelativeDocumentMoniker": "GoodsShopper.RelayServer\\Command\\TestCommand.cs",
               "ToolTip": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\Command\\TestCommand.cs",
               "RelativeToolTip": "GoodsShopper.RelayServer\\Command\\TestCommand.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAIwEMAAAAIAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAswCsAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T01:19:01.785Z",
               "EditorCaption": ""
@@ -182,8 +178,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Command\\InsertProductTypeCommand.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAywEcAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T03:05:32.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T03:05:32.874Z"
             },
             {
               "$type": "Document",
@@ -195,8 +190,7 @@
               "RelativeToolTip": "..\\GoodsShopper\\GoodsShopper.Domain\\Service\\BrandService.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAYwGAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T09:54:15.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T09:54:15.988Z"
             },
             {
               "$type": "Document",
@@ -208,8 +202,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Model\\Service\\ICacheService.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAYwDcAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T09:16:33.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T09:16:33.552Z"
             },
             {
               "$type": "Document",
@@ -221,8 +214,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer.Domain\\Cache\\BrandCache.cs",
               "ViewState": "AQIAAIIAAAAAAAAAAAASwGUAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T08:57:35.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T08:57:35.423Z"
             },
             {
               "$type": "Document",
@@ -234,8 +226,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Model\\Service\\ConfigService.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAowCkAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T07:18:38.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T07:18:38.621Z"
             },
             {
               "$type": "Document",
@@ -247,8 +238,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer.Domain\\Cache\\CategoryCache.cs",
               "ViewState": "AQIAADwAAAAAAAAAAAAhwEgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T01:40:54.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T01:40:54.074Z"
             },
             {
               "$type": "Document",
@@ -260,8 +250,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Program.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAwwDAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T09:31:36.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T09:31:36.079Z"
             },
             {
               "$type": "Document",
@@ -273,8 +262,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Applibs\\RelayServerProcess.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAAQwDwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T07:43:05.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T07:43:05.357Z"
             },
             {
               "$type": "Document",
@@ -286,8 +274,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Applibs\\AutofacConfig.cs",
               "ViewState": "AQIAAEYAAAAAAAAAAAAQwFYAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T06:23:41.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T06:23:41.758Z"
             },
             {
               "$type": "Document",
@@ -299,8 +286,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Model\\BackEndProcedure\\CheckCacheTaskProcedure.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAowDMAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T08:35:42.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T08:35:42.864Z"
             },
             {
               "$type": "Document",
@@ -312,8 +298,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Model\\BackEndProcedure\\ClearExpireCacheProcedure.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAswBEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T05:26:53.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T05:26:53.777Z"
             },
             {
               "$type": "Document",
@@ -323,7 +308,7 @@
               "RelativeDocumentMoniker": "GoodsShopper.RelayServer.Domain\\Signalr\\GoodsShopperHubClient.cs",
               "ToolTip": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer.Domain\\Signalr\\GoodsShopperHubClient.cs",
               "RelativeToolTip": "GoodsShopper.RelayServer.Domain\\Signalr\\GoodsShopperHubClient.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAwwFEAAAA1AAAA",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAjwJ8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T08:50:15.721Z",
               "EditorCaption": ""
@@ -338,8 +323,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Applibs\\ConfigHelper.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAywFkAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T06:23:24.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T06:23:24.611Z"
             },
             {
               "$type": "Document",
@@ -356,13 +340,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductActionHandler.cs",
               "DocumentMoniker": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\ActionHandler\\ProductActionHandler.cs",
               "RelativeDocumentMoniker": "GoodsShopper.RelayServer\\ActionHandler\\ProductActionHandler.cs",
               "ToolTip": "D:\\TrainProject\\GoodsShopper.RelayServer\\GoodsShopper.RelayServer\\ActionHandler\\ProductActionHandler.cs",
               "RelativeToolTip": "GoodsShopper.RelayServer\\ActionHandler\\ProductActionHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAgwBUAAAA/AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAgwBsAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T01:53:08.557Z",
               "EditorCaption": ""
@@ -377,8 +361,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\ActionHandler\\BrandActionHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAswBUAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T08:25:51.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T08:25:51.998Z"
             },
             {
               "$type": "Document",
@@ -390,8 +373,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\Model\\HubClientNotify.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T01:05:33.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T01:05:33.192Z"
             },
             {
               "$type": "Document",
@@ -403,8 +385,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer\\WebSocket\\WebSocketRule.cs",
               "ViewState": "AQIAAF0AAAAAAAAAAADwv2YAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T06:22:13.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T06:22:13.012Z"
             },
             {
               "$type": "Document",
@@ -416,8 +397,7 @@
               "RelativeToolTip": "GoodsShopper.RelayServer.Domain\\Cache\\Structure\\ProductType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T03:20:13.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T03:20:13.042Z"
             }
           ]
         }

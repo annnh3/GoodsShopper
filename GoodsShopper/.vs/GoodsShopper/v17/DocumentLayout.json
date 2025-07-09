@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\TrainProject\\GoodsShopper\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1B80BB9-C76A-41FA-B939-06F57FB1A38B}|GoodsShopper.Ap\\GoodsShopper.Ap.csproj|d:\\trainproject\\goodsshopper\\goodsshopper.ap\\actionhandler\\productinsertactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1B80BB9-C76A-41FA-B939-06F57FB1A38B}|GoodsShopper.Ap\\GoodsShopper.Ap.csproj|solutionrelative:goodsshopper.ap\\actionhandler\\productinsertactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 351,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductInsertActionHandler.cs",
+              "DocumentMoniker": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Ap\\ActionHandler\\ProductInsertActionHandler.cs",
+              "RelativeDocumentMoniker": "GoodsShopper.Ap\\ActionHandler\\ProductInsertActionHandler.cs",
+              "ToolTip": "D:\\TrainProject\\GoodsShopper\\GoodsShopper.Ap\\ActionHandler\\ProductInsertActionHandler.cs",
+              "RelativeToolTip": "GoodsShopper.Ap\\ActionHandler\\ProductInsertActionHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T06:10:21.777Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,1 +1,7 @@
-.vs/ 
+.vs
+packages
+bin
+obj
+*.user
+TestResults
+*.nupkg
