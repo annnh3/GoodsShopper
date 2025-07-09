@@ -149,7 +149,7 @@
             <returns>是否握手驗證成功</returns>
             
         </member>
-        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.Warring(System.String)">
+        <member name="M:WebSocketUtils.Model.IWebSocketRule`1.Warning(System.String)">
             <summary>
             log warring
             </summary>

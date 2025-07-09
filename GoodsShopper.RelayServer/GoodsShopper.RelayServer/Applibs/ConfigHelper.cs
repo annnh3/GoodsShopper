@@ -86,7 +86,8 @@ namespace GoodsShopper.RelayServer.Applibs
                     { "insertProduct"           , "InsertProductCommand"},
                     { "insertProductType"       , "InsertProductTypeCommand"},
                     { "insertBrand"             , "InsertBrandCommand"},
-                    { "insertCategory"          , "InsertCategoryCommand"}
+                    { "insertCategory"          , "InsertCategoryCommand"},
+                    { "test"                    , "TestCommand"}
                 }
             }
         };

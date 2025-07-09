@@ -198,9 +198,9 @@ namespace GoodsShopper.RelayServer.WebSocket
             return false;
         }
 
-        public override void Warring(string msg)
+        public override void Warning(string msg)
         {
-            this.Logger.Warn($"{this.GetType().Name} Warring: {msg}");
+            this.Logger.Warn($"{this.GetType().Name} Warning: {msg}");
         }
     }
 }

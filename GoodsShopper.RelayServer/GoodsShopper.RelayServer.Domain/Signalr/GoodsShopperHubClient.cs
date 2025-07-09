@@ -67,7 +67,7 @@ namespace GoodsShopper.RelayServer.Domain.Signalr
 
                 try
                 {
-                    // 心跳包小於1分鐘或連線不健康時重連或singnalr有發生錯誤
+                    // 心跳包小於1分鐘或連線不健康時重連或singalr有發生錯誤
                     if (DateTime.Now > this.checkUpdateTime.AddHours(5) ||
                         this.HubConnection.State != ConnectionState.Connected ||
                         this.forceInitialize)

@@ -122,6 +122,6 @@
         /// log warring
         /// </summary>
         /// <param name="msg"></param>
-        public abstract void Warring(string msg);
+        public abstract void Warning(string msg);
     }
 }

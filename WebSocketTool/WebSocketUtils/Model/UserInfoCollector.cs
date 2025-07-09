@@ -125,13 +125,13 @@
 
             if (string.IsNullOrEmpty(userInfo.UserID))
             {
-                this.wsRule.Warring("user id is not exist");
+                this.wsRule.Warning("user id is not exist");
                 return (false, null);
             }
 
             if (!this._userInfos.TryAdd(userInfo.UserID, userInfo))
             {
-                this.wsRule.Warring($"user id is repeated {userInfo.UserID}");
+                this.wsRule.Warning($"user id is repeated {userInfo.UserID}");
                 return (false, userInfo);
             }
 
@@ -253,7 +253,7 @@
                     catch (Exception ex)
                     {
                         userInfo?.RestoreSendAuth();
-                        this.wsRule.Warring($"{this.GetType().Name} MessageObserver Exception:{ex.ToString()}");
+                        this.wsRule.Warning($"{this.GetType().Name} MessageObserver Exception:{ex.ToString()}");
                     }
                 });
             }
