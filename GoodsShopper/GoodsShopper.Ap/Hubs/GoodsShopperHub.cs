@@ -128,6 +128,10 @@ namespace GoodsShopper.Ap.Hubs
                             Message = excuteActionResult.actionBase.ToString(),
                         };
 
+                        logger.Info($"{this.GetType().Name}777  Result:{result.Action}");
+
+
+
                         return (excuteActionResult.notifyType, result);
                     }
                 }

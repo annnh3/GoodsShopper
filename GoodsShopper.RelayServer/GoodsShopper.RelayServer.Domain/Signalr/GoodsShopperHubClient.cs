@@ -187,6 +187,8 @@ namespace GoodsShopper.RelayServer.Domain.Signalr
                 else
                 {
                     this.logger.Trace($"{this.GetType().Name} SendAction >> Action:{sendAction.Action}, Message:{sendAction.Message}");
+
+                    //this.logger.Trace($"{this.GetType().Name} SendAction2222 >> Action:{task.}, Result:{result}");
                 }
             });
         }

@@ -9,7 +9,7 @@ using System;
 
 namespace GoodsShopper.RelayServer.Command
 {
-    public class TestCommand : ICommand
+    public class TestGetActionCommand : ICommand
     {
         /// <summary>
         /// HubClient
@@ -21,7 +21,7 @@ namespace GoodsShopper.RelayServer.Command
         /// </summary>
         private readonly ICacheService cacheSvc;
 
-        public TestCommand(ICacheService cacheSvc, IIndex<HubType, IHubClient> hubClientSets)
+        public TestGetActionCommand(ICacheService cacheSvc, IIndex<HubType, IHubClient> hubClientSets)
         {
             this.cacheSvc = cacheSvc;
             this.hubClient = hubClientSets[HubType.GoodsShopperHub];
@@ -33,12 +33,12 @@ namespace GoodsShopper.RelayServer.Command
             {
                 var cmd = JsonConvert.DeserializeObject<Action_Product_in_insertProduct>(content);
 
-                hubClient.SendAction(new ProductInsertAction
+                var x = hubClient.GetAction(new ProductInsertAction
                 {
                     Name = cmd.Name,
                     BrandId = cmd.BrandId,
                     CategoryId = cmd.CategoryId
-                });
+                }).Result;
 
                 return true;
             }
@@ -48,6 +48,5 @@ namespace GoodsShopper.RelayServer.Command
                 return false;
             }
         }
-
     }
 }

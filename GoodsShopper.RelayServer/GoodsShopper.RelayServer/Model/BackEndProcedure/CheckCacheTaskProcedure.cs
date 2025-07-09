@@ -44,6 +44,7 @@ namespace GoodsShopper.RelayServer.Model.BackEndProcedure
                 this.Logger.Error(ex, $"{this.GetType().Name} Elapsed Exception");
             }
 
+            Logger.Info("Trigger CheckCacheTaskProcedure");
             this.timer.Start();
         }
 
@@ -51,7 +52,7 @@ namespace GoodsShopper.RelayServer.Model.BackEndProcedure
         {
             await Task.Run(() =>
             {
-                Logger.Info("✅ CheckCacheTaskProcedure 啟動成功");
+                Logger.Info("✅ CheckCacheTaskProcedure Triggered");
                 this.timer.Start();
             });
         }

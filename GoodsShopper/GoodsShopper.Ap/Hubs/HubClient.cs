@@ -55,6 +55,9 @@ namespace GoodsShopper.Ap.Hubs
                 return;
             }
 
+            this.logger.Trace($"{this.GetType().Name} 666 {JsonConvert.SerializeObject(act)}");
+
+
             var sendAction = new ActionModule()
             {
                 Action = act.Action(),

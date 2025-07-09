@@ -12,7 +12,7 @@ namespace GoodsShopper.Ap.Applibs
         /// <summary>
         /// 紀錄Log
         /// </summary>
-        private ILogger Logger = LogManager.GetLogger("RelayServer");
+        private ILogger Logger = LogManager.GetLogger("GoodsShopper");
 
         private readonly IHubClient hubClient;
 
