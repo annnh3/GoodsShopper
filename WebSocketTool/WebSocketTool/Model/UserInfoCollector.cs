@@ -115,13 +115,13 @@ namespace WebSocketTool.Model
 
             if (string.IsNullOrEmpty(userInfo.UserID))
             {
-                this.wsRule.Warring("user id is not exist");
+                this.wsRule.Warning("user id is not exist");
                 return false;
             }
 
             if (!this._userInfos.TryAdd(userInfo.UserID, userInfo))
             {
-                this.wsRule.Warring("user id is repeated");
+                this.wsRule.Warning("user id is repeated");
                 return false;
             }
 
@@ -218,7 +218,7 @@ namespace WebSocketTool.Model
                     catch (Exception ex)
                     {
                         userInfo?.RestoreSendAuth();
-                        this.wsRule.Warring($"{this.GetType().Name} MessageObserver Exception:{ex.ToString()}");
+                        this.wsRule.Warning($"{this.GetType().Name} MessageObserver Exception:{ex.ToString()}");
                     }
                 });
             }

@@ -51,6 +51,7 @@ namespace GoodsShopper.RelayServer.Model.BackEndProcedure
         {
             await Task.Run(() =>
             {
+                Logger.Info("✅ CheckCacheTaskProcedure 啟動成功");
                 this.timer.Start();
             });
         }

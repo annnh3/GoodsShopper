@@ -81,9 +81,9 @@ namespace WebSocketTool.Test.Model
             return true;
         }
 
-        public override void Warring(string msg)
+        public override void Warning(string msg)
         {
-            Console.WriteLine($"{this.GetType().Name} Warring: {msg}");
+            Console.WriteLine($"{this.GetType().Name} Warning: {msg}");
         }
     }
 }
