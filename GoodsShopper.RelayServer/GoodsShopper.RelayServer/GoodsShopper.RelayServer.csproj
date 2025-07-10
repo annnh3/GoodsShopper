@@ -107,6 +107,7 @@
     <Compile Include="Command\InsertProductCommand.cs" />
     <Compile Include="Command\InsertProductTypeCommand.cs" />
     <Compile Include="Command\TestCommand.cs" />
+    <Compile Include="Command\TestGetActionCommand.cs" />
     <Compile Include="Model\BackEndProcedure\CheckCacheTaskProcedure.cs" />
     <Compile Include="Model\BackEndProcedure\ClearExpireCacheProcedure.cs" />
     <Compile Include="Model\BackEndProcedure\IProcedure.cs" />

@@ -116,7 +116,9 @@
     <Compile Include="ClientAction\ToRelayServer\Action_Brand_in_getBrand.cs" />
     <Compile Include="ClientAction\ToRelayServer\Action_Product_in_getProduct.cs" />
     <Compile Include="ClientAction\ToRelayServer\Action_Category_in_getCategory.cs" />
+    <Compile Include="ClientAction\ToRelayServer\GetProducts.cs" />
     <Compile Include="ClientAction\ToRelayServer\IRelayServerAction.cs" />
+    <Compile Include="ClientAction\ToRelayServer\GetProductObj.cs" />
     <Compile Include="Extension\TaskExtensions.cs" />
     <Compile Include="Model\ICurrentSerialNumber.cs" />
     <Compile Include="Model\JsonDateConvert.cs" />
@@ -134,6 +136,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\GoodsShopper\GoodsShopper.Domain\GoodsShopper.Domain.csproj">
+      <Project>{AE8301BE-5625-4313-9A90-87F8CF43A68E}</Project>
+      <Name>GoodsShopper.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Libs\Live.Libs\Live.Libs.csproj">
       <Project>{38894a00-3203-4b05-ae8b-e18e7d539bbe}</Project>
       <Name>Live.Libs</Name>

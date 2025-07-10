@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace GoodsShopper.RelayServer.Domain.ClientAction.ToClient
 {
-    public class Action_Product_out_insertProduct : IClientAction
+    public class GetProducts : IClientAction
     {
         /// <summary>
         /// 商品資料

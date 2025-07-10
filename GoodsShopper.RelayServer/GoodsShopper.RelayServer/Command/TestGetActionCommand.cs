@@ -1,11 +1,14 @@
 ﻿using Autofac.Features.Indexed;
 using GoodsShopper.Domain.Action;
+using GoodsShopper.RelayServer.Domain.Cache.Structure;
+using GoodsShopper.RelayServer.Domain.ClientAction.ToClient;
 using GoodsShopper.RelayServer.Domain.ClientAction.ToRelayServer;
 using GoodsShopper.RelayServer.Domain.Signalr;
 using GoodsShopper.RelayServer.Model;
 using GoodsShopper.RelayServer.Model.Service;
 using Newtonsoft.Json;
 using System;
+using System.Linq;
 
 namespace GoodsShopper.RelayServer.Command
 {
@@ -33,12 +36,32 @@ namespace GoodsShopper.RelayServer.Command
             {
                 var cmd = JsonConvert.DeserializeObject<Action_Product_in_insertProduct>(content);
 
-                var x = hubClient.GetAction(new ProductInsertAction
+                var actionResult = hubClient.GetAction(new ProductInsertAction
                 {
                     Name = cmd.Name,
                     BrandId = cmd.BrandId,
                     CategoryId = cmd.CategoryId
-                }).Result;
+                }).Result.Message;
+
+                var result = JsonConvert.DeserializeObject<GetProductObj>(actionResult).Products.First();
+
+                var productData = new ProductInfo
+                {
+                    Name = result.Name,
+                    Id = result.Id,
+                    BrandId = result.BrandId,
+                    CategoryId = result.CategoryId
+                };
+
+                cacheSvc.Upsert(new[]
+                {
+                    productData
+                });
+
+                user.AddMsgQueueWithDc(new Domain.ClientAction.ToClient.GetProducts()
+                {
+                    Data = productData
+                });
 
                 return true;
             }

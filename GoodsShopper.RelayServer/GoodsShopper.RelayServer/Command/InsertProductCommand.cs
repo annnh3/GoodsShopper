@@ -54,7 +54,7 @@ namespace GoodsShopper.RelayServer.Command
                     productData
                 });
 
-                user.AddMsgQueueWithDc(new Action_Product_out_insertProduct()
+                user.AddMsgQueueWithDc(new Domain.ClientAction.ToClient.GetProducts()
                 {
                     Data = productData
                 });

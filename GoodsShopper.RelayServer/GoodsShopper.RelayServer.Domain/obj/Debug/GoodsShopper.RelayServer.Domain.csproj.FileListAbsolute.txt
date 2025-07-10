@@ -82,3 +82,6 @@ D:\TrainProject\GoodsShopper.RelayServer\GoodsShopper.RelayServer.Domain\obj\Deb
 D:\TrainProject\GoodsShopper.RelayServer\GoodsShopper.RelayServer.Domain\obj\Debug\GoodsSho.F9BE47C4.Up2Date
 D:\TrainProject\GoodsShopper.RelayServer\GoodsShopper.RelayServer.Domain\obj\Debug\GoodsShopper.RelayServer.Domain.dll
 D:\TrainProject\GoodsShopper.RelayServer\GoodsShopper.RelayServer.Domain\obj\Debug\GoodsShopper.RelayServer.Domain.pdb
+D:\TrainProject\GoodsShopper.RelayServer\GoodsShopper.RelayServer.Domain\bin\Debug\GoodsShopper.Domain.dll
+D:\TrainProject\GoodsShopper.RelayServer\GoodsShopper.RelayServer.Domain\bin\Debug\GoodsShopper.Domain.pdb
+D:\TrainProject\GoodsShopper.RelayServer\GoodsShopper.RelayServer.Domain\bin\Debug\GoodsShopper.Domain.dll.config
