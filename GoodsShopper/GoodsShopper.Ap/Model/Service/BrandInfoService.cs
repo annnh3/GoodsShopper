@@ -21,7 +21,7 @@ namespace GoodsShopper.Ap.Model.Service
         {
             var result = this.brandRepository.Insert(new Brand
             {
-                Name = "TestBrand"
+                Name = "JS"
             });
         }
 
@@ -31,6 +31,24 @@ namespace GoodsShopper.Ap.Model.Service
             {
                 var result = this.brandRepository.Insert(new Brand
                 {
+                    Name = request.Name
+                });
+
+                return (null, result.brand);
+            }
+            catch (Exception ex) 
+            {
+                return (ex, null);
+            }
+        }
+
+        public (Exception exception, Brand brand) Update(BrandUpdateDto request)
+        {
+            try
+            {
+                var result = this.brandRepository.Update(new Brand
+                {
+                    Id = request.Id,
                     Name = request.Name
                 });
 

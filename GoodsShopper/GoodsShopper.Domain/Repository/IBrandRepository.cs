@@ -8,6 +8,8 @@ namespace GoodsShopper.Domain.Repository
     {
         (Exception exception, Brand brand) Insert(Brand brand);
 
+        (Exception exception, Brand brand) Update(Brand brand);
+
         (Exception ex, Brand brand) Query(int id);
 
         (Exception ex, IEnumerable<Brand> brands) GetAll();

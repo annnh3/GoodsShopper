@@ -11,5 +11,7 @@
         (Exception exception, BrandQueryResponseDto response) Query();
 
         (Exception exception, Brand brand) Insert(BrandInsertDto request);
+
+        (Exception exception, Brand brand) Update(BrandUpdateDto request);
     }
 }

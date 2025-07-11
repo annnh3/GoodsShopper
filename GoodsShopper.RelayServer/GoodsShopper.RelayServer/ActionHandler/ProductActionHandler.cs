@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Xml.Linq;
 using GoodsShopper.Domain.Action;
 using GoodsShopper.Domain.Model;
 using GoodsShopper.RelayServer.Domain.Cache.Structure;
@@ -47,8 +48,8 @@ namespace GoodsShopper.RelayServer.ActionHandler
                 wsSvc.AddMessageQueue(
                     new Domain.ClientAction.ToClient.GetProducts()
                     {
-                        Data = new ProductInfo()
-                    }, 
+                        Data = productInfos.First()
+                    },
                     user => true
                 );
 

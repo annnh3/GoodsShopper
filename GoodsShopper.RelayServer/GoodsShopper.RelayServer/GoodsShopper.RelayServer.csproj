@@ -92,11 +92,14 @@
   <ItemGroup>
     <Compile Include="ActionHandler\BrandActionHandler.cs" />
     <Compile Include="ActionHandler\CategoryActionHandler.cs" />
+    <Compile Include="ActionHandler\DeleteProductActionHandler.cs" />
     <Compile Include="ActionHandler\ProductActionHandler.cs" />
     <Compile Include="ActionHandler\ProductTypeActionHandler.cs" />
+    <Compile Include="ActionHandler\UpdateBrandActionHandler.cs" />
     <Compile Include="Applibs\AutofacConfig.cs" />
     <Compile Include="Applibs\ConfigHelper.cs" />
     <Compile Include="Applibs\RelayServerProcess.cs" />
+    <Compile Include="Command\DeleteProductCommand.cs" />
     <Compile Include="Command\GetBrandCommand.cs" />
     <Compile Include="Command\GetCategoryCommand.cs" />
     <Compile Include="Command\GetProductCommand.cs" />
@@ -108,6 +111,7 @@
     <Compile Include="Command\InsertProductTypeCommand.cs" />
     <Compile Include="Command\TestCommand.cs" />
     <Compile Include="Command\TestGetActionCommand.cs" />
+    <Compile Include="Command\UpdateBrandCommand.cs" />
     <Compile Include="Model\BackEndProcedure\CheckCacheTaskProcedure.cs" />
     <Compile Include="Model\BackEndProcedure\ClearExpireCacheProcedure.cs" />
     <Compile Include="Model\BackEndProcedure\IProcedure.cs" />

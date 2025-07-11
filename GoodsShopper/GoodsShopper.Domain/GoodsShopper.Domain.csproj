@@ -50,12 +50,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Action\ToMicroService\BrandUpdateAction.cs" />
+    <Compile Include="Action\ToMicroService\ProductDeleteAction.cs" />
     <Compile Include="Action\ToMicroService\ProductTypeClientInsertAction.cs" />
+    <Compile Include="Action\ToMicroService\ProductUpdateAction.cs" />
     <Compile Include="Action\ToRelayService\BrandAction.cs" />
     <Compile Include="Action\ToMicroService\CategoryQueryAction.cs" />
     <Compile Include="Action\ToMicroService\CategoryInsertAction.cs" />
     <Compile Include="Action\ToMicroService\BrandInsertAction.cs" />
     <Compile Include="Action\ToRelayService\CategoryAction.cs" />
+    <Compile Include="Action\ToRelayService\DeleteProductAction.cs" />
     <Compile Include="Action\ToRelayService\ProductAction.cs" />
     <Compile Include="Action\ToMicroService\BrandQueryAction.cs" />
     <Compile Include="Action\ToMicroService\GetProductAction.cs" />
@@ -63,6 +67,8 @@
     <Compile Include="Action\ToMicroService\ProductInsertAction.cs" />
     <Compile Include="Action\ToRelayService\ProductTypeAction.cs" />
     <Compile Include="Action\ToMicroService\ProductTypeQueryAction.cs" />
+    <Compile Include="Action\ToRelayService\UpdateBrandAction.cs" />
+    <Compile Include="DTO\Brand\BrandUpdateDto.cs" />
     <Compile Include="DTO\Category\CategoryQueryDto.cs" />
     <Compile Include="DTO\Category\CategoryInsertDto.cs" />
     <Compile Include="DTO\Brand\BrandInsertDto.cs" />
@@ -72,6 +78,7 @@
     <Compile Include="DTO\Character\CharacterQueryDto.cs" />
     <Compile Include="DTO\ProductType\ProductTypeInsertDto.cs" />
     <Compile Include="DTO\ProductType\ProductTypeQueryDto.cs" />
+    <Compile Include="DTO\Product\ProductDeleteDto.cs" />
     <Compile Include="DTO\Product\ProductInsertDto.cs" />
     <Compile Include="DTO\Brand\BrandQueryDto.cs" />
     <Compile Include="DTO\Product\ProductQueryDto.cs" />

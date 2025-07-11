@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using GoodsShopper.Ap.Model.Service;
 using GoodsShopper.Domain.Action;
+using GoodsShopper.Domain.DTO;
 using GoodsShopper.Domain.Model;
 using Live.Libs.KeepAliveConn;
 using Newtonsoft.Json;
@@ -26,7 +27,7 @@ namespace GoodsShopper.Ap.ActionHandler
             {
                 var content = JsonConvert.DeserializeObject<ProductInsertAction>(action.Message);
 
-                var result = this.productInfoSvc.Insert(new Domain.DTO.ProductInsertDto
+                var result = this.productInfoSvc.Insert(new ProductInsertDto
                 {
                     BrandId = content.BrandId,
                     CategoryId = content.CategoryId,

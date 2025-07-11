@@ -180,6 +180,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionHandler\BrandUpdateActionHandler.cs" />
     <Compile Include="ActionHandler\CategoryInsertActionHandler.cs" />
     <Compile Include="ActionHandler\CategoryQueryActionHandler.cs" />
     <Compile Include="ActionHandler\GetCategoryActionHandler.cs" />
@@ -187,6 +188,7 @@
     <Compile Include="ActionHandler\GetProductActionHandler.cs" />
     <Compile Include="ActionHandler\BrandInsertActionHandler.cs" />
     <Compile Include="ActionHandler\GetProductTypeActionHandler.cs" />
+    <Compile Include="ActionHandler\ProductDeleteActionHandler.cs" />
     <Compile Include="ActionHandler\ProductInsertActionHandler.cs" />
     <Compile Include="ActionHandler\BrandQueryActionHandler.cs" />
     <Compile Include="ActionHandler\ProductQueryActionHandler.cs" />

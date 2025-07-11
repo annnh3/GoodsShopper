@@ -23,7 +23,7 @@ namespace GoodsShopper.Ap.Model.Service
             {
                 BrandId = 1,
                 CategoryId = 1,
-                Name = "testProduct"
+                Name = "飯糰宮"
             });
         }
 
@@ -75,6 +75,21 @@ namespace GoodsShopper.Ap.Model.Service
                 });
             }
             catch (Exception ex) 
+            {
+                return (ex, null);
+            }
+        }
+
+        public (Exception exception, Product product) Delete(ProductDeleteDto request)
+        {
+            try
+            {
+                var c = this.productRepository.Delete(request.Id);
+
+
+                return c;
+            }
+            catch (Exception ex)
             {
                 return (ex, null);
             }

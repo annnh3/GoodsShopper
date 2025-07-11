@@ -34,7 +34,20 @@ namespace GoodsShopper.RelayServer.Domain.Cache
         /// <param name="expression"></param>
         public override void Delete<T>(Func<T, bool> expression)
         {
-            // 沒有刪除功能
+            // 沒有刪除功能? 自己做!
+
+            if (typeof(T) != typeof(ProductInfo))
+            {
+                return;
+            }
+
+            lock (_lock)
+            {
+                var legacyData = GetData<IEnumerable<ProductInfo>>();
+                UpdateData(legacyData.Where(p =>
+                    !legacyData.Where(expression as Func<ProductInfo, bool>)
+                        .Select(s => s.Id).Contains(p.Id)).ToList());
+            }
         }
 
         /// <summary>

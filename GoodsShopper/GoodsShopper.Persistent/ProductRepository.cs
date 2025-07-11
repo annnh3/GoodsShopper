@@ -2,6 +2,8 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Xml.Linq;
 using GoodsShopper.Domain.Model;
 using GoodsShopper.Domain.Repository;
 
@@ -9,13 +11,13 @@ namespace GoodsShopper.Persistent
 {
     public class ProductRepository : IProductRepository
     {
-        private static ConcurrentBag<Product> products = new ConcurrentBag<Product>();
+        private static ConcurrentDictionary<int, Product> products = new ConcurrentDictionary<int, Product>();
 
         public (Exception ex, IEnumerable<Product> products) GetAll()
         {
             try
             {
-                return (null, products.ToList());
+                return (null, products.Values);
             }
             catch (Exception ex) 
             {
@@ -27,11 +29,11 @@ namespace GoodsShopper.Persistent
         {
             try
             {
-                int id = products.OrderByDescending(x => x.Id).FirstOrDefault()?.Id + 1 ?? 1;
+                int newId = (products.Values.OrderByDescending(p => p.Id).FirstOrDefault()?.Id ?? 0) + 1;
 
-                product.Id = id;
+                product.Id = newId;
 
-                products.Add(product);
+                products.TryAdd(product.Id, product);
 
                 return (null, product);
             }
@@ -45,7 +47,20 @@ namespace GoodsShopper.Persistent
         {
             try
             {
-                return (null, products.Where(x => x.Name == name).SingleOrDefault());
+                return (null, products.Values.SingleOrDefault(x => x.Name == name));
+            }
+            catch (Exception ex)
+            {
+                return (ex, null);
+            }
+        }
+
+        public (Exception ex, Product product) Delete(int id)
+        {
+            try
+            {
+                products.TryRemove(id, out var deletedProduct);
+                return (null, deletedProduct);
             }
             catch (Exception ex)
             {

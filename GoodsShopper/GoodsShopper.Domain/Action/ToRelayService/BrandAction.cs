@@ -37,6 +37,5 @@ namespace GoodsShopper.Domain.Action
         {
             return 1;
         }
-
     }
 }

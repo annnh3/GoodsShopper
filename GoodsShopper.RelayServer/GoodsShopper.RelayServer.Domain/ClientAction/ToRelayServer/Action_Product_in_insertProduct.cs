@@ -11,13 +11,13 @@ namespace GoodsShopper.RelayServer.Domain.ClientAction.ToRelayServer
         public string Name { get; set; }
 
         /// <summary>
-        /// Brand
+        /// 品牌索引
         /// </summary>
         [JsonProperty("brandId")]
         public int BrandId { get; set; }
 
         /// <summary>
-        /// Brand
+        /// 分類索引
         /// </summary>
         [JsonProperty("categoryId")]
         public int CategoryId { get; set; }

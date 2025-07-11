@@ -11,5 +11,7 @@ namespace GoodsShopper.Domain.Repository
         (Exception ex, Product product) Query(string name);
 
         (Exception ex, IEnumerable<Product> products) GetAll();
+
+        (Exception ex, Product product) Delete(int id);
     }
 }

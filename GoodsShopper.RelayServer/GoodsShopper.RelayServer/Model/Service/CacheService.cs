@@ -208,8 +208,7 @@ namespace GoodsShopper.RelayServer.Model.Service
         /// <typeparam name="T"></typeparam>
         /// <param name="expression"></param>
         /// <returns></returns>
-        public IEnumerable<T> Get<T>(Func<T, bool> expression)
-            where T : class
+        public IEnumerable<T> Get<T>(Func<T, bool> expression) where T : class
             => this.cacheDic[typeof(T).Name.Replace("Cache", string.Empty)].Get(expression);
 
         /// <summary>
@@ -218,22 +217,15 @@ namespace GoodsShopper.RelayServer.Model.Service
         /// <typeparam name="T"></typeparam>
         /// <param name="records"></param>
         public void InitializeUpsert<T>(IEnumerable<T> records) where T : class
-        {
-            var cache = this.cacheDic[typeof(T).Name.Replace("Cache", string.Empty)];
-            cache.InitializeUpsert(records);
-        }
+            => cacheDic[typeof(T).Name.Replace("Cache", string.Empty)].InitializeUpsert(records);
 
         /// <summary>
         /// 更新/寫入資料
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="records"></param>
-        public void Upsert<T>(IEnumerable<T> records)
-            where T : class
-        {
-            var cache = this.cacheDic[typeof(T).Name.Replace("Cache", string.Empty)];
-            cache.Upsert(records);
-        }
+        public void Upsert<T>(IEnumerable<T> records) where T : class
+            => cacheDic[typeof(T).Name.Replace("Cache", string.Empty)].Upsert(records);
 
         /// <summary>
         /// 純更新資料

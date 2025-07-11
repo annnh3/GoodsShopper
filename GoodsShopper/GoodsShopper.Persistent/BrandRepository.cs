@@ -9,13 +9,13 @@ namespace GoodsShopper.Persistent
 {
     public class BrandRepository : IBrandRepository
     {
-        private static ConcurrentBag<Brand> brands = new ConcurrentBag<Brand>();
+        private static ConcurrentDictionary<int, Brand> brands = new ConcurrentDictionary<int, Brand>();
 
         public (Exception ex, IEnumerable<Brand> brands) GetAll()
         {
             try
             {
-                return (null, brands.OrderBy(x => x.Id).ToList());
+                return (null, brands.Values);
             }
             catch (Exception ex)
             {
@@ -27,13 +27,33 @@ namespace GoodsShopper.Persistent
         {
             try
             {
-                int id = brands.OrderByDescending(x => x.Id).FirstOrDefault()?.Id + 1 ?? 1;
+                int newId = (brands.Values.OrderByDescending(p => p.Id).FirstOrDefault()?.Id ?? 0) + 1;
 
-                brand.Id = id;
+                brand.Id = newId;
 
-                brands.Add(brand);
+                brands.TryAdd(brand.Id, brand);
 
                 return (null, brand);
+            }
+            catch (Exception ex)
+            {
+                return (ex, null);
+            }
+        }
+
+        public (Exception exception, Brand brand) Update(Brand brand)
+        {
+            try
+            {
+                if (brands.ContainsKey(brand.Id))
+                {
+                    brands[brand.Id] = brand;
+                    return (null, brand);
+                }
+                else
+                {
+                    return (new Exception("查無品牌"), null);
+                }
             }
             catch (Exception ex)
             {
@@ -45,7 +65,7 @@ namespace GoodsShopper.Persistent
         {
             try
             {
-                return (null, brands.Where(x => x.Id == id).SingleOrDefault());
+                return (null, brands.Values.SingleOrDefault(x => x.Id == id));
             }
             catch (Exception ex)
             {

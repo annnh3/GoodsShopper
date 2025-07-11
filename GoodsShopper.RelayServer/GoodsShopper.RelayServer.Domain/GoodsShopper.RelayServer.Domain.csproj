@@ -108,9 +108,11 @@
     <Compile Include="ClientAction\ToClient\Action_Category_out_getCategory.cs" />
     <Compile Include="ClientAction\ToClient\Action_Brand_out_getBrand.cs" />
     <Compile Include="ClientAction\ToClient\IClientAction.cs" />
+    <Compile Include="ClientAction\ToRelayServer\Action_Brand_in_updateBrand.cs" />
     <Compile Include="ClientAction\ToRelayServer\Action_Category_in_insertCategory.cs" />
     <Compile Include="ClientAction\ToRelayServer\Action_ProductType_in_getProductType.cs" />
     <Compile Include="ClientAction\ToRelayServer\Action_ProductType_in_insertProductType.cs" />
+    <Compile Include="ClientAction\ToRelayServer\Action_Product_in_delProduct.cs" />
     <Compile Include="ClientAction\ToRelayServer\Action_Product_in_insertProduct.cs" />
     <Compile Include="ClientAction\ToRelayServer\Action_Brand_in_insertBrand.cs" />
     <Compile Include="ClientAction\ToRelayServer\Action_Brand_in_getBrand.cs" />
