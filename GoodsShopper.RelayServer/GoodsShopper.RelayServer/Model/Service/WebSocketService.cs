@@ -34,8 +34,8 @@ namespace GoodsShopper.RelayServer.Model.Service
             if (this.wsServer.ServerStatus)
             {
                 var data = clientAction.ToString();
-                //var dataBytes = WebsocketEncodeHelper.WebsocketEncodeByZlib(data);
-                var dataBytes = System.Text.Encoding.UTF8.GetBytes(data);
+                var dataBytes = WebsocketEncodeHelper.WebsocketEncodeByZlib(data);
+                //var dataBytes = System.Text.Encoding.UTF8.GetBytes(data);
 
                 var users = this.wsServer.GetUser(expression);
 

@@ -110,9 +110,26 @@ namespace GoodsShopper.RelayServer.Model.Service
                 var categories = getResult.response.Categories.Select(x => new Category
                 {
                     Id = x.Id,
+                    ProductTypeId = x.ProductTypeId,
                     Name = x.Name
                 });
                 cache.Initialize(categories);
+            }
+            else if (cache.GetType() == typeof(ProductTCache))
+            {
+                var productInfos = Get<ProductInfo>(x => true);
+                var brands = Get<Brand>(x => true).ToDictionary(b => b.Id, b => b.Name);
+                var categories = Get<Category>(x => true).ToDictionary(c => c.Id, c => c.Name);
+
+                var products = productInfos.Select(x => new ProductT
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Brand = brands.TryGetValue(x.BrandId, out var brandName) ? brandName : string.Empty,
+                    Category = categories.TryGetValue(x.CategoryId, out var catName) ? catName : string.Empty
+                });
+
+                cache.Initialize(products);
             }
             else if (cache.GetType() == typeof(ProductInfoCache))
             {

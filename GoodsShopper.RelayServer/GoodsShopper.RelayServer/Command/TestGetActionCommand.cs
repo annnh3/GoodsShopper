@@ -43,7 +43,7 @@ namespace GoodsShopper.RelayServer.Command
                     CategoryId = cmd.CategoryId
                 }).Result.Message;
 
-                var result = JsonConvert.DeserializeObject<GetProductObj>(actionResult).Products.First();
+                var result = JsonConvert.DeserializeObject<GetProductObj>(actionResult).Products.FirstOrDefault();
 
                 var productData = new ProductInfo
                 {

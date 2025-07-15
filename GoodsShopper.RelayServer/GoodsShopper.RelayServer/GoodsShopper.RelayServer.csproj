@@ -103,6 +103,7 @@
     <Compile Include="Command\GetBrandCommand.cs" />
     <Compile Include="Command\GetCategoryCommand.cs" />
     <Compile Include="Command\GetProductCommand.cs" />
+    <Compile Include="Command\GetProductTCommand.cs" />
     <Compile Include="Command\GetProductTypeCommand.cs" />
     <Compile Include="Command\ICommand.cs" />
     <Compile Include="Command\InsertBrandCommand.cs" />

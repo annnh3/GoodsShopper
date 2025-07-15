@@ -20,7 +20,8 @@ namespace GoodsShopper.Ap.Model.Service
         {
             var result = this.categoryRepository.Insert(new Category
             {
-                Name = "TestCategory"
+                ProductTypeId = 1,
+                Name = "娃類",
             });
         }
 

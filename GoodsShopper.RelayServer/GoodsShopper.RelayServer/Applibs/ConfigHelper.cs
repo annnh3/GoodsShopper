@@ -67,6 +67,7 @@ namespace GoodsShopper.RelayServer.Applibs
         public static readonly Type[] SubscribeCaches = {
             typeof(BrandCache),
             typeof(CategoryCache),
+            typeof(ProductTCache),
             typeof(ProductInfoCache),
             typeof(ProductTypeCache)
         };
@@ -80,6 +81,7 @@ namespace GoodsShopper.RelayServer.Applibs
                 UserType.Member, new Dictionary<string, string>
                 {
                     { "getProduct"              , "GetProductCommand"},
+                    { "getProductT"             , "GetProductTCommand"},
                     { "getProductType"          , "GetProductTypeCommand"},
                     { "getBrand"                , "GetBrandCommand"},
                     { "getCategory"             , "GetCategoryCommand"},
